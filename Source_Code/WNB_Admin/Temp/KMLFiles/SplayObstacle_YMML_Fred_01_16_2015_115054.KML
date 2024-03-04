@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document xmlns:xlink="http://www.w3/org/1999/xlink">
+<name>Splay</name>
+<LookAt>
+<longitude>144.8481</longitude>
+<latitude>-37.66227</latitude>
+<range>4872</range>
+<tilt>0.00000000000000000</tilt>
+<heading>0.00000000000000000</heading>
+</LookAt>
+
+  <Style id="Port-MN">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href>
+        </Icon>
+        <color>fe00ff00</color>
+      </IconStyle>
+      <BalloonStyle>
+        <color>fff3d5bd</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+    </Style>
+
+  <Style id="Port-AL">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href>
+        </Icon>
+        <color>fe00feff</color>
+      </IconStyle>
+      <BalloonStyle>
+        <color>fff3d5bd</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+    </Style>
+
+  <Style id="Port-AD">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href>
+        </Icon>
+        <color>fff3d5bd</color>
+      </IconStyle>
+      <BalloonStyle>
+        <color>fff3d5bd</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+    </Style>
+
+  <Style id="Port-EM">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href>
+        </Icon>
+        <color>fe00a9ff</color>
+      </IconStyle>
+      <BalloonStyle>
+        <color>fff3d5bd</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+    </Style>
+
+  <Style id="Port-ST">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href>
+        </Icon>
+        <color>fe0000ff</color>
+      </IconStyle>
+      <BalloonStyle>
+        <color>fff3d5bd</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+    </Style>
+
+
+    <Style id="ARP">
+      <IconStyle>
+        <Icon>
+          <href>root://icons/palette-4.png</href>
+          <x>160</x>
+          <w>32</w>
+          <h>32</h>
+        </Icon>
+      </IconStyle>
+      <BalloonStyle>
+        <color>fff3d5bd</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+    </Style>
+    
+    <Style id="Intersection">
+      <IconStyle>
+        <color>ff00ffff</color>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+          <x>160</x>
+          <w>32</w>
+          <h>32</h>
+        </Icon>
+      </IconStyle>
+      <BalloonStyle>
+        <color>ffd3ffff</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+    </Style>
+
+    <Style id="RwyEnd">
+      <IconStyle>
+        <color>ff0000ff</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/placemark_square.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <color>ffd7c6fa</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+      <ListStyle>
+      </ListStyle>
+    </Style>
+
+    <Style id="RunwayRed">
+      <LineStyle>
+        <color>770000ff</color>
+        <width>15</width>
+      </LineStyle>
+    </Style>
+    
+    <Style id="RunwayOrange">
+      <LineStyle>
+        <color>fe00a9ff</color>
+        <width>15</width>
+      </LineStyle>
+    </Style>
+
+   <Style id="DispThr">
+      <IconStyle>
+        <color>ff4ab84e</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <color>ff9dd0a7</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+      <ListStyle>
+      </ListStyle>
+    </Style>
+
+	<Style id="ObstacleSquare">
+      <IconStyle>
+        <color>ff0000ff</color>
+        <scale>1.2</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/placemark_square.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <color>ffd7c6fa</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+      <ListStyle>
+      </ListStyle>
+    </Style>
+
+    <Style id="EOP">
+      <IconStyle>
+        <color>ff00ffff</color>
+        <scale>1.0</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/info.png</href>
+          <x>160</x>
+          <w>64</w>
+          <h>64</h>
+        </Icon>
+      </IconStyle>
+      <BalloonStyle>
+        <color>ffc0dcc0</color>
+        <text>
+          <![CDATA[
+      <font face="Courier">$[description]</font>
+      ]]>
+        </text>
+      </BalloonStyle>
+    </Style>
+
+    <Style id="CL">
+      <LineStyle>
+        <color>77ff00ff</color>
+        <width>2</width>
+      </LineStyle>
+    </Style>
+
+    <Style id="TakeOffSplay">
+      <LineStyle>
+        <color>ff00ffff</color>
+        <width>2</width>
+      </LineStyle>
+    </Style><Placemark>
+<name>Line Ident</name>
+<description>Line Name</description>
+<styleUrl>#CL</styleUrl>
+<LineString>
+<coordinates>144.8498,-37.66236,0
+145.4781,-37.6973,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>Splay Ident</name>
+<description>Splay Name</description>
+<styleUrl>#TakeOffSplay</styleUrl>
+<LineString>
+<coordinates>145.4781,-37.68954,0
+144.9237,-37.65853,0
+144.8498,-37.66155,0
+144.8497,-37.66317,0
+144.9223,-37.67468,0
+145.4768,-37.70568,0
+
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>434</name>
+<description>
+<table width="300">
+<tr>
+<td>
+<P>Runway 09 Std</P>
+<P>Obstacle 2891 m from SOT</P>
+<P>Survey</P>
+<br>Tree</br>
+</td>
+</tr>
+</table>
+</description>
+<styleUrl>#ObstacleSquare</styleUrl>
+<Point>
+<coordinates>144.8548,-37.66329</coordinates>
+</Point>
+</Placemark><Placemark>
+<name>469</name>
+<description>
+<table width="300">
+<tr>
+<td>
+<P>Runway 09 Std</P>
+<P>Obstacle 3523 m from SOT</P>
+<P>Survey</P>
+<br>Tree</br>
+</td>
+</tr>
+</table>
+</description>
+<styleUrl>#ObstacleSquare</styleUrl>
+<Point>
+<coordinates>144.8622,-37.66177</coordinates>
+</Point>
+</Placemark><Placemark>
+<name>Procedures</name>
+<description>
+<table width="250">
+<tr>
+<td>Takeoff Procedures -  Rwy  09  Std</td>
+</tr>
+<tr>
+<td>All Takeoffs</td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+<tr>
+<td>Engine-out</td>
+</tr>
+<tr>
+<td>GPS permitted in lieu of DME.
+TRK 083. At 10 DME ML turn RIGHT TRK 263.</td>
+</tr>
+<tr>
+<td>Post Takeoff</td>
+</tr>
+<tr>
+<td>TRK to ML VOR. At ML VOR TRK 160.  Climb to MSA.</td>
+</tr>
+<tr>
+<td>Comment</td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+</table>
+</description>
+<styleUrl>#EOP</styleUrl>
+<Point>
+<coordinates>144.8481,-37.66227</coordinates>
+</Point>
+</Placemark>
+</Document>
+</kml>
+

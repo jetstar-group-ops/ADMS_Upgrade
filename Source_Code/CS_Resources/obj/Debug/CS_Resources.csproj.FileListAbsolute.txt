@@ -1,0 +1,5 @@
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\CS_Resources\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\CS_Resources\bin\Debug\CS_Resources.dll
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\CS_Resources\bin\Debug\CS_Resources.pdb
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\CS_Resources\obj\Debug\CS_Resources.dll
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\CS_Resources\obj\Debug\CS_Resources.pdb

@@ -1,0 +1,9 @@
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Common\bin\Debug\WNB_Common.dll
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Common\bin\Debug\WNB_Common.pdb
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Common\bin\Debug\WNB_Common.xml
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Common\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Common\obj\Debug\WNB_Common.Resources.resources
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Common\obj\Debug\WNB_Common.vbproj.GenerateResource.Cache
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Common\obj\Debug\WNB_Common.dll
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Common\obj\Debug\WNB_Common.xml
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Common\obj\Debug\WNB_Common.pdb

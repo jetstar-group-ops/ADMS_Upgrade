@@ -1,0 +1,37 @@
+﻿<!--
+    You can find existing browser definitions at
+    <windir>\Microsoft.NET\Framework\<ver>\CONFIG\Browsers
+-->
+<browsers>
+    <browser id="NewBrowser" parentID="Mozilla">
+        <identification>
+            <userAgent match="Unique User Agent Regular Expression" />
+        </identification>
+
+        <capture>
+            <userAgent match="NewBrowser (?'version'\d+\.\d+)" />
+        </capture>
+
+        <!--<capabilities>
+            <capability name="browser" value="Chrome" />
+            <capability name="version" value="${36 }" />
+        </capabilities>-->
+    </browser>
+  <browser refID="safari1plus">
+    <controlAdapters>
+      <adapter controlType="System.Web.UI.WebControls.Menu" adapterType="" />
+    </controlAdapters>
+  </browser>
+  <!--<browser refID="Chrome">
+    <controlAdapters>
+      <adapter controlType="System.Web.UI.WebControls.Menu" adapterType="" />
+    </controlAdapters>
+  </browser>-->
+
+
+  <browser refID="Mozilla">
+        <capabilities>
+            <capability name="xml" value="true" />
+        </capabilities>
+    </browser>
+</browsers>

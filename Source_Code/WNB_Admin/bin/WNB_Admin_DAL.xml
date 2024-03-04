@@ -1,0 +1,45 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WNB_Admin_DAL
+</name>
+</assembly>
+<members>
+<member name="M:WNB_Admin_DAL.ADMS_DAL_AptMaxExp.GetAptMaxExp(System.String)">
+	<summary>
+ Get Categories
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WNB_Admin_DAL.ADMS_DAL_DatabaseExp.GetDatabaseExp(System.String)">
+	<summary>
+ Get DatabaseExp
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WNB_Admin_DAL.ADMS_DAL_DatabaseExp.CreateDatabaseExp(System.String,System.String,System.String)">
+	<summary>
+ Add Database Exp
+ </summary>
+	<param name="psCode"></param>
+	<param name="psDesc"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WNB_Admin_DAL.ADMS_DAL_APTCategory.GetCategories(System.String)">
+	<summary>
+ Get Categories
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:WNB_Admin_DAL.ADMS_DAL_ParaValues.UpdateParameter(System.Single,System.String,System.String)">
+	<summary>
+ Update Parameter Value
+ </summary>
+	<param name="sngParmeterValue"></param>
+	<param name="strParameterName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document xmlns:xlink="http://www.w3/org/1999/xlink">
+<LookAt>
+<longitude>144.8433</longitude>
+<latitude>-37.67334</latitude>
+<range>3700.00000000000000000</range>
+<tilt>0.00000000000000000</tilt>
+<heading>0.00000000000000000</heading>
+</LookAt>
+
+  <Style id="Port-MN">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href>
+        </Icon>
+        <color>fe00ff00</color>
+      </IconStyle>
+      <BalloonStyle>
+        <color>fff3d5bd</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+    </Style>
+
+  <Style id="Port-AL">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href>
+        </Icon>
+        <color>fe00feff</color>
+      </IconStyle>
+      <BalloonStyle>
+        <color>fff3d5bd</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+    </Style>
+
+  <Style id="Port-AD">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href>
+        </Icon>
+        <color>fff3d5bd</color>
+      </IconStyle>
+      <BalloonStyle>
+        <color>fff3d5bd</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+    </Style>
+
+  <Style id="Port-EM">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href>
+        </Icon>
+        <color>fe00a9ff</color>
+      </IconStyle>
+      <BalloonStyle>
+        <color>fff3d5bd</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+    </Style>
+
+  <Style id="Port-ST">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href>
+        </Icon>
+        <color>fe0000ff</color>
+      </IconStyle>
+      <BalloonStyle>
+        <color>fff3d5bd</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+    </Style>
+
+
+    <Style id="ARP">
+      <IconStyle>
+        <Icon>
+          <href>root://icons/palette-4.png</href>
+          <x>160</x>
+          <w>32</w>
+          <h>32</h>
+        </Icon>
+      </IconStyle>
+      <BalloonStyle>
+        <color>fff3d5bd</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+    </Style>
+    
+    <Style id="Intersection">
+      <IconStyle>
+        <color>ff00ffff</color>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+          <x>160</x>
+          <w>32</w>
+          <h>32</h>
+        </Icon>
+      </IconStyle>
+      <BalloonStyle>
+        <color>ffd3ffff</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+    </Style>
+
+    <Style id="RwyEnd">
+      <IconStyle>
+        <color>ff0000ff</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/placemark_square.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <color>ffd7c6fa</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+      <ListStyle>
+      </ListStyle>
+    </Style>
+
+    <Style id="RunwayRed">
+      <LineStyle>
+        <color>770000ff</color>
+        <width>15</width>
+      </LineStyle>
+    </Style>
+    
+    <Style id="RunwayOrange">
+      <LineStyle>
+        <color>fe00a9ff</color>
+        <width>15</width>
+      </LineStyle>
+    </Style>
+
+   <Style id="DispThr">
+      <IconStyle>
+        <color>ff4ab84e</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <color>ff9dd0a7</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+      <ListStyle>
+      </ListStyle>
+    </Style>
+
+	<Style id="ObstacleSquare">
+      <IconStyle>
+        <color>ff0000ff</color>
+        <scale>1.2</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/placemark_square.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <color>ffd7c6fa</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+      <ListStyle>
+      </ListStyle>
+    </Style>
+
+    <Style id="EOP">
+      <IconStyle>
+        <color>ff00ffff</color>
+        <scale>1.0</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/info.png</href>
+          <x>160</x>
+          <w>64</w>
+          <h>64</h>
+        </Icon>
+      </IconStyle>
+      <BalloonStyle>
+        <color>ffc0dcc0</color>
+        <text>
+          <![CDATA[
+      <font face="Courier">$[description]</font>
+      ]]>
+        </text>
+      </BalloonStyle>
+    </Style>
+
+    <Style id="CL">
+      <LineStyle>
+        <color>77ff00ff</color>
+        <width>2</width>
+      </LineStyle>
+    </Style>
+
+    <Style id="TakeOffSplay">
+      <LineStyle>
+        <color>ff00ffff</color>
+        <width>2</width>
+      </LineStyle>
+    </Style><Placemark>
+<name>YMML  434 ft</name>
+<description>MEL
+Melbourne Intl
+Melbourne
+Australia
+434 ft
+Main Airport</description>
+<styleUrl>#ARP</styleUrl>
+<Point>
+<coordinates>144.8433,-37.67334</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>Runway</name><description>09/27</description><styleUrl>#RunwayRed</styleUrl>
+<LineString>
+<coordinates>144.8481,-37.66227,0
+144.8223,-37.66076,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>Runway</name><description>16/34</description><styleUrl>#RunwayRed</styleUrl>
+<LineString>
+<coordinates>144.841,-37.68579,0
+144.8349,-37.65319,0
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark> <name>09 395 ft</name><description>
+<table width="300"><tr><td>Rwy 09</td><td> Std</td></tr><tr><td>TORA</td><td>TODA</td><td>ASDA</td><td>LDA</td></tr><tr><td>2286 m</td><td>2436 m</td><td>2346 m</td><td>2286 m</td></tr><tr><td>Width</td><td>45 m</td><td>Entry</td><td>90</td></tr><tr><td>Slope</td><td>0.16</td><td>Up</td><td></td></tr><tr><td>MagDir</td><td>83</td></tr></table><p></p><p></p></description><styleUrl>#RwyEnd</styleUrl><Point><coordinates> 144.8223,-37.66076</coordinates>
+</Point>
+</Placemark>
+<Placemark> <name>16 432 ft</name><description>
+<table width="300"><tr><td>Rwy 16</td><td> Std</td></tr><tr><td>TORA</td><td>TODA</td><td>ASDA</td><td>LDA</td></tr><tr><td>3657 m</td><td>3777 m</td><td>3717 m</td><td>3657 m</td></tr><tr><td>Width</td><td>45 m</td><td>Entry</td><td>90</td></tr><tr><td>Slope</td><td>0.90</td><td>Up</td><td></td></tr><tr><td>MagDir</td><td>160</td></tr></table><p></p><p></p></description><styleUrl>#RwyEnd</styleUrl><Point><coordinates> 144.8349,-37.65319</coordinates>
+</Point>
+</Placemark>
+<Placemark> <name>27 407 ft</name><description>
+<table width="300"><tr><td>Rwy 27</td><td> Shk</td></tr><tr><td>TORA</td><td>TODA</td><td>ASDA</td><td>LDA</td></tr><tr><td>2286 m</td><td>2436 m</td><td>2346 m</td><td>2286 m</td></tr><tr><td>Width</td><td>45 m</td><td>Entry</td><td>90</td></tr><tr><td>Slope</td><td>0.16</td><td>Up</td><td></td></tr><tr><td>MagDir</td><td>263</td></tr></table><p></p><p></p></description><styleUrl>#RwyEnd</styleUrl><Point><coordinates> 144.8481,-37.66227</coordinates>
+</Point>
+</Placemark>
+<Placemark> <name>27 407 ft</name><description>
+<table width="300"><tr><td>Rwy 27</td><td> Std</td></tr><tr><td>TORA</td><td>TODA</td><td>ASDA</td><td>LDA</td></tr><tr><td>2286 m</td><td>2436 m</td><td>2346 m</td><td>2286 m</td></tr><tr><td>Width</td><td>45 m</td><td>Entry</td><td>90</td></tr><tr><td>Slope</td><td>0.16</td><td>Up</td><td></td></tr><tr><td>MagDir</td><td>263</td></tr></table><p></p><p></p></description><styleUrl>#RwyEnd</styleUrl><Point><coordinates> 144.8481,-37.66227</coordinates>
+</Point>
+</Placemark>
+<Placemark> <name>34 330 ft</name><description>
+<table width="300"><tr><td>Rwy 34</td><td> Shk</td></tr><tr><td>TORA</td><td>TODA</td><td>ASDA</td><td>LDA</td></tr><tr><td>3657 m</td><td>3837 m</td><td>3717 m</td><td>3657 m</td></tr><tr><td>Width</td><td>45 m</td><td>Entry</td><td>90</td></tr><tr><td>Slope</td><td>0.85</td><td>Up</td><td></td></tr><tr><td>MagDir</td><td>340</td></tr></table><p></p><p></p></description><styleUrl>#RwyEnd</styleUrl><Point><coordinates> 144.841,-37.68579</coordinates>
+</Point>
+</Placemark>
+<Placemark> <name>34 330 ft</name><description>
+<table width="300"><tr><td>Rwy 34</td><td> Std</td></tr><tr><td>TORA</td><td>TODA</td><td>ASDA</td><td>LDA</td></tr><tr><td>3657 m</td><td>3837 m</td><td>3717 m</td><td>3657 m</td></tr><tr><td>Width</td><td>45 m</td><td>Entry</td><td>90</td></tr><tr><td>Slope</td><td>0.85</td><td>Up</td><td></td></tr><tr><td>MagDir</td><td>340</td></tr></table><p></p><p></p></description><styleUrl>#RwyEnd</styleUrl><Point><coordinates> 144.841,-37.68579</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>C  424 ft</name>
+<description>
+<table width="200">
+<tr><td>C</td>
+<td>Rwy 16</td>
+<td>Std</td>
+</tr><tr><td>TORA</td>
+<td>3353 m</td></tr>
+<tr><td>Disp</td>
+<td>304 m</td></tr>
+<tr><td>Entry</td>
+<td>90</td></tr></table>
+<p>Commence takeoff from intersection C</p></description>
+<styleUrl>#Intersection</styleUrl>
+<Point>
+<coordinates> 144.8353,-37.65595</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>E  396 ft</name>
+<description>
+<table width="200">
+<tr><td>E</td>
+<td>Rwy 16</td>
+<td>Std</td>
+</tr><tr><td>TORA</td>
+<td>2345 m</td></tr>
+<tr><td>Disp</td>
+<td>1312 m</td></tr>
+<tr><td>Entry</td>
+<td>90</td></tr></table>
+<p>Commence takeoff from intersection E</p></description>
+<styleUrl>#Intersection</styleUrl>
+<Point>
+<coordinates> 144.8371,-37.6649</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>F  379 ft</name>
+<description>
+<table width="200">
+<tr><td>F</td>
+<td>Rwy 16</td>
+<td>Std</td>
+</tr><tr><td>TORA</td>
+<td>1818 m</td></tr>
+<tr><td>Disp</td>
+<td>1839 m</td></tr>
+<tr><td>Entry</td>
+<td>90</td></tr></table>
+<p>Commence takeoff from intersection F</p></description>
+<styleUrl>#Intersection</styleUrl>
+<Point>
+<coordinates> 144.838,-37.67013</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>INT  406 ft</name>
+<description>
+<table width="200">
+<tr><td>INT</td>
+<td>Rwy 16</td>
+<td>Std</td>
+</tr><tr><td>TORA</td>
+<td>2715 m</td></tr>
+<tr><td>Disp</td>
+<td>942 m</td></tr>
+<tr><td>Entry</td>
+<td>90</td></tr></table>
+<p>Coomence takeoff from Runway 09/27</p></description>
+<styleUrl>#Intersection</styleUrl>
+<Point>
+<coordinates> 144.8364,-37.66141</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>J  351 ft</name>
+<description>
+<table width="200">
+<tr><td>J</td>
+<td>Rwy 34</td>
+<td>Shk</td>
+</tr><tr><td>TORA</td>
+<td>2895 m</td></tr>
+<tr><td>Disp</td>
+<td>762 m</td></tr>
+<tr><td>Entry</td>
+<td>90</td></tr></table>
+<p>Commence takeoff from intersection J</p></description>
+<styleUrl>#Intersection</styleUrl>
+<Point>
+<coordinates> 144.8397,-37.679</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>G  379 ft</name>
+<description>
+<table width="200">
+<tr><td>G</td>
+<td>Rwy 34</td>
+<td>Std</td>
+</tr><tr><td>TORA</td>
+<td>1953 m</td></tr>
+<tr><td>Disp</td>
+<td>1704 m</td></tr>
+<tr><td>Entry</td>
+<td>90</td></tr></table>
+<p>Commence takeoff from intersection G</p></description>
+<styleUrl>#Intersection</styleUrl>
+<Point>
+<coordinates> 144.838,-37.67013</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>J  351 ft</name>
+<description>
+<table width="200">
+<tr><td>J</td>
+<td>Rwy 34</td>
+<td>Std</td>
+</tr><tr><td>TORA</td>
+<td>2895 m</td></tr>
+<tr><td>Disp</td>
+<td>762 m</td></tr>
+<tr><td>Entry</td>
+<td>90</td></tr></table>
+<p>Commence takeoff from intersection J</p></description>
+<styleUrl>#Intersection</styleUrl>
+<Point>
+<coordinates> 144.8397,-37.679</coordinates>
+</Point>
+</Placemark>
+</Document></kml>

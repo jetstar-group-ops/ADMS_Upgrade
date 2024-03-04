@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <Airport>
+    <ICAO>YSSY</ICAO>
+    <AirlineCode>JQ</AirlineCode>
+    <IATA>SYD</IATA>
+    <Name>Sydney Intl</Name>
+    <City>Sydney</City>
+    <Country>Australia</Country>
+    <Elevation>21</Elevation>
+    <MagDir>E</MagDir>
+    <MagDeg>13</MagDeg>
+    <MagMin>0</MagMin>
+    <MagSec>0.00</MagSec>
+    <LatDir>S</LatDir>
+    <LatDeg>33</LatDeg>
+    <LatMin>56</LatMin>
+    <LatSec>45.97</LatSec>
+    <LonDir>E</LonDir>
+    <LonDeg>151</LonDeg>
+    <LonMin>10</LonMin>
+    <LonSec>37.98</LonSec>
+    <Comment>Rwy 25 Std, Shk Obstacle 2600m 25 ft removed as same height as preceding obstacle Fred 02/12/14 </Comment>
+    <Active>1</Active>
+    <ChangeDateTime>2014-12-02 05:49:44.000</ChangeDateTime>
+    <ChangeUser>Fred</ChangeUser>
+    <Category>MN</Category>
+  </Airport>
+  <Runway>
+    <ICAO>YSSY</ICAO>
+    <RwyId>7</RwyId>
+    <RwyMod>Std</RwyMod>
+    <AirlineCode>JQ</AirlineCode>
+    <TORA>2530</TORA>
+    <TODA>2620</TODA>
+    <ASDA>2560</ASDA>
+    <LDA>2530</LDA>
+    <DispThr>0</DispThr>
+    <DispTO>0</DispTO>
+    <ResaTo>0</ResaTo>
+    <ResaLd>0</ResaLd>
+    <Width>45</Width>
+    <Shoulder>30</Shoulder>
+    <SlopeDir>Up</SlopeDir>
+    <Slope>0.05</Slope>
+    <GaGrad>2.1</GaGrad>
+    <LineUpAngle>90</LineUpAngle>
+    <ElevStartTORA>16</ElevStartTORA>
+    <LatDir>S</LatDir>
+    <LatDeg>33</LatDeg>
+    <LatMin>56</LatMin>
+    <LatSec>37.49</LatSec>
+    <LonDir>E</LonDir>
+    <LonDeg>151</LonDeg>
+    <LonMin>9</LonMin>
+    <LonSec>49.08</LonSec>
+    <MagHdg>62</MagHdg>
+    <AEProc>NULL</AEProc>
+    <EOProc>TRK 062.</EOProc>
+    <PostProc>TRK 090. Climb to MSA</PostProc>
+    <Comment>NULL</Comment>
+    <LandComment>NULL</LandComment>
+    <ExpCmt>0</ExpCmt>
+    <DontApndToEop>1</DontApndToEop>
+    <AcftApp>Blank</AcftApp>
+    <Active>1</Active>
+    <ChangeDateTime>00:00.0</ChangeDateTime>
+    <ChangeUser>Fred</ChangeUser>
+    <DontCheckSlope>1</DontCheckSlope>
+    <ExpApp>J</ExpApp>
+  </Runway>
+  <Intersection>
+    <Intersection_Id>155</Intersection_Id>
+    <ICAO>YSSY</ICAO>
+    <RwyId>7</RwyId>
+    <RwyMod>Std</RwyMod>
+    <Ident>G2</Ident>
+    <AirlineCode>JQ</AirlineCode>
+    <DeltaFieldLength>133</DeltaFieldLength>
+    <ElevStartTORA>16</ElevStartTORA>
+    <LatDir>S</LatDir>
+    <LatDeg>33</LatDeg>
+    <LatMin>56</LatMin>
+    <LatSec>36.41</LatSec>
+    <LonDir>E</LonDir>
+    <LonDeg>151</LonDeg>
+    <LonMin>9</LonMin>
+    <LonSec>53.66</LonSec>
+    <LineUpAngle>90</LineUpAngle>
+    <Comment>Commence takeoff from intersection G2</Comment>
+    <Active>1</Active>
+    <ChangeDateTime>50:57.0</ChangeDateTime>
+    <ChangeUser>Fred Orford</ChangeUser>
+  </Intersection>
+  <Obstacle>
+    <Obstacle_Id>1148</Obstacle_Id>
+    <ICAO>YSSY</ICAO>
+    <RwyId>7</RwyId>
+    <RwyMod>Std</RwyMod>
+    <Distance>2626</Distance>
+    <AirlineCode>JQ</AirlineCode>
+    <Elevation>25</Elevation>
+    <LatOffSet>0</LatOffSet>
+    <ObsRef> Type A</ObsRef>
+    <Comment>Approach Aid</Comment>
+    <Active>1</Active>
+    <ChangeDateTime>00:00.0</ChangeDateTime>
+    <ChangeUser>Fred</ChangeUser>
+    <LatDir>N</LatDir>
+    <LatDeg>0</LatDeg>
+    <LatMin>0</LatMin>
+    <LatSec>0</LatSec>
+    <LonDir>E</LonDir>
+    <LonDeg>0</LonDeg>
+    <LonMin>0</LonMin>
+    <LonSec>0</LonSec>
+  </Obstacle>
+</DocumentElement>

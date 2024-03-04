@@ -1,0 +1,47 @@
+﻿.MenuItem
+{
+    
+    /*background:url("images/menu-background-right.jpg");
+    
+	font-size:small
+	font-weight:normal;
+	line-height:35px;
+	margin:0px;
+	padding-right :2%;
+	text-align:center;
+	display:block;
+	*/
+	background-color:Gray;
+	padding:0% 2%;
+	text-align:center;
+}
+
+.level2
+{
+    /*background:Gray url('images/sub_sep.gif') bottom left no-repeat;*/
+    position:inherit;
+	background:Gray;
+	text-align:center;
+}
+
+.level3
+{
+    color: black;
+    background-color: Silver;
+    font-family: Gill Sans MT !important;
+    font-size: small;
+}
+
+.hoverstyle
+{
+	background : black;
+    	background:url("images/hover.gif") bottom center no-repeat;
+		text-decoration:none;
+}
+
+.MenuStyle1
+{
+    text-align: center;
+    z-index:1;
+}
+       

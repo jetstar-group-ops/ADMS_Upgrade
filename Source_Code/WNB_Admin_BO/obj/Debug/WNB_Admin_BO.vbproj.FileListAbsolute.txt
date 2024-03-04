@@ -1,0 +1,16 @@
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_BO\bin\Debug\WNB_Admin_BO.dll.config
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_BO\bin\Debug\WNB_Admin_BO.dll
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_BO\bin\Debug\WNB_Admin_BO.pdb
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_BO\bin\Debug\WNB_Admin_BO.xml
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_BO\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_BO\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_BO\bin\Debug\WNB_Admin_DAL.dll
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_BO\bin\Debug\WNB_Admin_DAL.pdb
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_BO\bin\Debug\WNB_Admin_DAL.xml
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_BO\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_BO\obj\Debug\WNB_Admin_BO.Resources.resources
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_BO\obj\Debug\WNB_Admin_BO.vbproj.GenerateResource.Cache
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_BO\obj\Debug\WNB_Admin_BO.dll
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_BO\obj\Debug\WNB_Admin_BO.xml
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_BO\obj\Debug\WNB_Admin_BO.pdb
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_BO\bin\Debug\SQLite.NET.dll

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<AnalyticalReportsDataSet>
+  <TblMaster>
+	  <IPAD_UDID>100812</IPAD_UDID>
+	  <Update_DT>JQ</Update_DT>
+	  <PreviousDbVersionNo>117</PreviousDbVersionNo>
+	  <PreviousDbVersionString>SIN</PreviousDbVersionString>
+	  <CurrentDbVersionNo>DPS</CurrentDbVersionNo>
+	  <CurrentDbVersionString>320</CurrentDbVersionString>
+	  <IpAddress>320</IpAddress>
+	  <Device_Serial_Number>2010-05-05T09:20:00</Device_Serial_Number>    
+  </TblMaster>  
+</AnalyticalReportsDataSet>

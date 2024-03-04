@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="yes"?>
+<AnalyticalReportsDataSet>
+  <Table>
+    <IPAD_UDID>83A1D7F3-FBAF-523B-BB73-63EB6073255D</IPAD_UDID>
+    <Update_DT>27/09/2012</Update_DT>
+    <PreviousDbVersionNo>0</PreviousDbVersionNo>
+    <PreviousDbVersionString />
+    <CurrentDbVersionNo>36</CurrentDbVersionNo>
+    <CurrentDbVersionString>TEST-36</CurrentDbVersionString>
+    <IpAddress>10.42.200.42</IpAddress>
+    <UpdateDate>2012-09-27T12:37:33.17+05:30</UpdateDate>
+  </Table>
+  <Table1>
+    <FilterCriteria>IPAD UDID : 83A1D7F3-FBAF-523B-BB73-63EB6073255D
+</FilterCriteria>
+  </Table1>
+</AnalyticalReportsDataSet>

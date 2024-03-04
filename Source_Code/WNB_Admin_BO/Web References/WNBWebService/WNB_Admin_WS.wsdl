@@ -1,0 +1,3879 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CreateUpdateUnderFloor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="underfloor_hold_id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="hold_cl_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Max_hold_Load" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="underfloor_comp_id1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="underfloor_comp_id2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strAircraftId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Version" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="LastUpdatedBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateUpdateUnderFloorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateUpdateUnderFloorResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Create_Update_ServiceDefinition">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="service_definition_id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="service_defintion_cl_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="flight_no_desig_ref" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="start_flight_number" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="end_flight_number" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="intVersionNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Create_Update_ServiceDefinitionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Create_Update_ServiceDefinitionResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ChoiceListByChoicelistID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="straircraftId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strchoice_list_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ChoiceListByChoicelistIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_ChoiceListByChoicelistIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ServiceDefinition">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="service_definition_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="service_definition_cl_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="flight_no_desig_ref" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ServiceDefinitionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_ServiceDefinitionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Create_Update_ServiceData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="servicedata_id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="type_choicelistid" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="weight" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="occupies_seat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="category_choicelistid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="aircraft_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="intVersionNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Create_Update_ServiceDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Create_Update_ServiceDataResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ServiceData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="servicedata_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="type_choicelistid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="aircraftid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ServiceDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_ServiceDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_GalleyWeight">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="subfleet_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="desig_cl_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_GalleyWeightResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_GalleyWeightResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ULDConfiguration">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strTableId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strAircraftId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ConfigID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="AirConfigID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ULDConfigID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ULDConfigurationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_ULDConfigurationResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_IPADUDID">
+        <s:complexType />
+      </s:element>
+      <s:element name="Get_IPADUDIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_IPADUDIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_IPADDBVersionHistory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IpadUD_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsExcludeLIPad" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strDBVerNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strExcludeDBVerNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_IPADDBVersionHistoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_IPADDBVersionHistoryResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_IPADDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IpadUD_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_IPADDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_IPADDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_IPADVersionNo">
+        <s:complexType />
+      </s:element>
+      <s:element name="Get_IPADVersionNoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_IPADVersionNoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update_IPADDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IpadUD_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EmpNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsDisabled" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="intVersionNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUpdatedBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update_IPADDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Update_IPADDetailsResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Push_Pre_Production_Data_To_Production">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strCreatedBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Push_Pre_Production_Data_To_ProductionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Push_Pre_Production_Data_To_ProductionResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DatabaseSanityChecks">
+        <s:complexType />
+      </s:element>
+      <s:element name="DatabaseSanityChecksResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DatabaseSanityChecksResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="APNPushRequest">
+        <s:complexType />
+      </s:element>
+      <s:element name="APNPushRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="APNPushRequestResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="APNTableSchema">
+        <s:complexType />
+      </s:element>
+      <s:element name="APNTableSchemaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="APNTableSchemaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAPNRequestMaster">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="intAPNRequestId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strAPNMessage" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="dtmAPNRequestDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="intBadgeCount" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dtAPNRequestDetail">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAPNRequestMasterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateAPNRequestMasterResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Publish_Database">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strDbVersion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strPublishedBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Publish_DatabaseResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetFunctionalities">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ParentFunctionalityId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFunctionalitiesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFunctionalitiesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReportsForFunctionality">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FunctionalityId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReportsForFunctionalityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetReportsForFunctionalityResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ps_UserId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ps_Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangePwd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ps_UserId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ps_NewPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangePwdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ChangePwdResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsUserHasPermission">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FunctionalityId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="LocationId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ParentFunctionality" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsUserHasPermissionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsUserHasPermissionResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUsers">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetUsersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUsersResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRoles">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetRolesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRolesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStations">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetStationsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStationsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserProfile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ps_UserId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="UserSNO" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserProfileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserProfileResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateUpdateUserProfile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LocationId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsDisabled" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="RoleIds" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateUpdateUserProfileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateUpdateUserProfileResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPagesFunctionalities">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ParentFunctionalityId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPagesFunctionalitiesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPagesFunctionalitiesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRoleFunctionalities">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RoleId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRoleFunctionalitiesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRoleFunctionalitiesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRoleFunctionalityLocations">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RoleId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="FunctionalityId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRoleFunctionalityLocationsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRoleFunctionalityLocationsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsRoleNameExists">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RoleName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="RoleId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsRoleNameExistsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IsRoleNameExistsResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateRole">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RoleName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RoleDescription" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RoleFunctionalities" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateRoleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateRoleResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateRole">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RoleId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="RoleName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RoleDescription" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RoleFunctionalities" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ModifyBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateRoleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateRoleResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteRole">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="intRoleId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteRoleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteRoleResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="intUserSNO" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUserId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteUserResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDBDetails">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetDBDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDBDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDBTableData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strTableId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDBTableDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDBTableDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteAircraft">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strAircraftId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="intVersionNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteAircraftResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteAircraftResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAircraft">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strAircraftId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strModelName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strRefChordOrigin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strRefChordLength" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strRefStation" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strIUEquConstC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strIUEquConstK" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMinOpWeightAdj" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMaxOpWeightAdj" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMinOpIUAdj" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMaxOpIUAdj" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="intVersionNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCreatedBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAircraftResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateAircraftResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Is_Database_Upgrade_Running">
+        <s:complexType />
+      </s:element>
+      <s:element name="Is_Database_Upgrade_RunningResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Is_Database_Upgrade_RunningResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Start_Database_Upgrade_Session">
+        <s:complexType />
+      </s:element>
+      <s:element name="Start_Database_Upgrade_SessionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Cancel_Database_Upgrade_Session">
+        <s:complexType />
+      </s:element>
+      <s:element name="Cancel_Database_Upgrade_SessionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Get_Aircrafts">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strAircraftId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_AircraftsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_AircraftsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAircraft">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strAircraftId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strModelName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strRefChordOrigin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strRefChordLength" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strRefStation" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strIUEquConstC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strIUEquConstK" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMinOpWeightAdj" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMaxOpWeightAdj" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMinOpIUAdj" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMaxOpIUAdj" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="intVersionNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUpdatedBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAircraftResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateAircraftResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAircraftConfig">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strAircraftId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="intACId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strTankRef" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strAirconfig" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strFuelTank" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="intVersionNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAircraftConfigResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateAircraftConfigResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Aircraft_Config">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strTableId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strAircraftId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Aircraft_ConfigResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Aircraft_ConfigResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Registration">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strAircraftId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="RegistrationID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_RegistrationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_RegistrationResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateRegistration">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Registration_Id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Registration_Number" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Aircraft_Id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MSN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Seat_Configuration" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Load_Data_Sheet_Sef" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Basic_Weight" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Basic_Arm" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Subfleet_Id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="intVersionNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCreatedBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateRegistrationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateRegistrationResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateRegistration">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Registration_Id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Registration_Number" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Aircraft_Id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MSN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Seat_Configuration" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Load_Data_Sheet_Sef" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Basic_Weight" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Basic_Arm" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Subfleet_Id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="intVersionNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCUpdatedBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateRegistrationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateRegistrationResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteRegistration">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RegistrationId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="intVersionNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteRegistrationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteRegistrationResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateSubfleet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strSubfleetId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strAircraftId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMaxTaxiWeight" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMaxTakeoffWeight" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMaxLandingWeight" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMaxZeroFuelWeight" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strFlightDeckWeight" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCabinCrewWeight" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="intVersionNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCreatedBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateSubfleetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateSubfleetResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateSubfleet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strSubfleetId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strAircraftId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMaxTaxiWeight" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMaxTakeoffWeight" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMaxLandingWeight" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMaxZeroFuelWeight" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strFlightDeckWeight" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCabinCrewWeight" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="intVersionNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUpdatedBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateSubfleetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateSubfleetResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Subfleet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strAircraftId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strSubfleetId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_SubfleetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_SubfleetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSubfleet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strSubfleetId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="intVersionNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSubfleetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteSubfleetResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_GalleyArms">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strTableId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strAircraftId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strChoiceID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strSubFleetID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_GalleyArmsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_GalleyArmsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Create_Update_GalleyArms">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Crew_Galley_Arm_ID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="crew_galley_desig_cl_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strChoiceID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="arm" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="strAircraftId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="VersionNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strSubFleetID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LastUpdatedBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Create_Update_GalleyArmsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Create_Update_GalleyArmsResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ZoneDefinition">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strTableId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strAircraftId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strSubFleetID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ZoneDefinitionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_ZoneDefinitionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Create_Update_ZoneDefination">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="zone_definition_id" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="designation_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="arm" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="max_capacity" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="first_row_number" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="last_row_number" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strAircraftId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="VersionNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strSubFleetID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LastUpdatedBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Create_Update_ZoneDefinationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Create_Update_ZoneDefinationResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Aircraft_Config_Adjustments">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strTableId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strAircraftId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strSubFleetID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Aircraft_Config_AdjustmentsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Aircraft_Config_AdjustmentsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Create_Update_AirCraftConfigAdj">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="air_conf_adjust_id" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="reference_cl_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="is_enabled" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="empty_weight" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="arm" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="strAircraftId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="VersionNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strSubFleetID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LastUpdatedBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Create_Update_AirCraftConfigAdjResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Create_Update_AirCraftConfigAdjResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateChoice_List">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strchoice_list_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strdescription" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="is_active" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="intVersionNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCreatedBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateChoice_ListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateChoice_ListResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteChoice_List">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strChoice_list_Id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="intVersionNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteChoice_ListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteChoice_ListResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateChoice_List">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strchoice_list_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strdescription" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="is_active" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="intVersionNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateChoice_ListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateChoice_ListResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ChoiceList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strChoice_list_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ChoiceListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_ChoiceListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateChoices">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="straircraft_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strchoices_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strchoice_list_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strdescription" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="is_default" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="is_active" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="intVersionNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCreatedBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateChoicesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateChoicesResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateChoices">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strchoices_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strchoice_list_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strdescription" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="is_default" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="is_active" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="intVersionNo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCreatedBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateChoicesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateChoicesResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Choices">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="straircraft_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strchoices_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ChoicesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_ChoicesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteChoices">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strChoices_Id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="intVersionNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteChoicesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteChoicesResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ULDDefiniton">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="strTabeleId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="straircraft_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ULDDefinitonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_ULDDefinitonResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Create_Update_ULDDefinition">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="struld_definition_id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="struld_cl_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="allow_cargo" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="allow_bags" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="strtare_weight" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="straircraft_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="intVersionNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Create_Update_ULDDefinitionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Create_Update_ULDDefinitionResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Create_Update_OprLimit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="operational_limits_id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="aircraft_config_cl_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="op_limit_type_cl_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="weight" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="MAC" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Subfleet_Id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="intVersionNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Create_Update_OprLimitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Create_Update_OprLimitResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_OperationalLimit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="strTableId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="straircraftconfig_cl_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="op_limit_cl_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strsubfleet_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_OperationalLimitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_OperationalLimitResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ULDPosition">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strTableId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strAircraftId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PosID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ULDPositionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_ULDPositionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateUpdateAirCraftPostion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="aircraft_config_pos_id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="aircraft_conf_cl_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Pos_name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="uld_ref_cl_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Max_Pos_Load" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="PosArm" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strAircraftId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Version" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="LastUpdatedBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateUpdateAirCraftPostionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateUpdateAirCraftPostionResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_UnderFloor_Comp">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="strTableId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Aircraft_Id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_UnderFloor_CompResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_UnderFloor_CompResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateUpdateUnderFloorComp">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="underfloor_comp_id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Comp_cl_id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="max_cpt_load" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pos_ref1" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pos_ref2" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pos_ref3" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strAircraftId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Version" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="LastUpdatedBy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateUpdateUnderFloorCompResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateUpdateUnderFloorCompResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAircraftConfigDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="straircraftId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Choice_list_Id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAircraftConfigDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAircraftConfigDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetULDConfigDefaultDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="straircraftId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="air_conf_cl_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetULDConfigDefaultDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetULDConfigDefaultDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_UnderFloor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="strTableId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Aircraft_Id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_UnderFloorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_UnderFloorResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CreateUpdateUnderFloorSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateUpdateUnderFloor" />
+  </wsdl:message>
+  <wsdl:message name="CreateUpdateUnderFloorSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateUpdateUnderFloorResponse" />
+  </wsdl:message>
+  <wsdl:message name="Create_Update_ServiceDefinitionSoapIn">
+    <wsdl:part name="parameters" element="tns:Create_Update_ServiceDefinition" />
+  </wsdl:message>
+  <wsdl:message name="Create_Update_ServiceDefinitionSoapOut">
+    <wsdl:part name="parameters" element="tns:Create_Update_ServiceDefinitionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_ChoiceListByChoicelistIDSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_ChoiceListByChoicelistID" />
+  </wsdl:message>
+  <wsdl:message name="Get_ChoiceListByChoicelistIDSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_ChoiceListByChoicelistIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_ServiceDefinitionSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_ServiceDefinition" />
+  </wsdl:message>
+  <wsdl:message name="Get_ServiceDefinitionSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_ServiceDefinitionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Create_Update_ServiceDataSoapIn">
+    <wsdl:part name="parameters" element="tns:Create_Update_ServiceData" />
+  </wsdl:message>
+  <wsdl:message name="Create_Update_ServiceDataSoapOut">
+    <wsdl:part name="parameters" element="tns:Create_Update_ServiceDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_ServiceDataSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_ServiceData" />
+  </wsdl:message>
+  <wsdl:message name="Get_ServiceDataSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_ServiceDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_GalleyWeightSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_GalleyWeight" />
+  </wsdl:message>
+  <wsdl:message name="Get_GalleyWeightSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_GalleyWeightResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_ULDConfigurationSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_ULDConfiguration" />
+  </wsdl:message>
+  <wsdl:message name="Get_ULDConfigurationSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_ULDConfigurationResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_IPADUDIDSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_IPADUDID" />
+  </wsdl:message>
+  <wsdl:message name="Get_IPADUDIDSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_IPADUDIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_IPADDBVersionHistorySoapIn">
+    <wsdl:part name="parameters" element="tns:Get_IPADDBVersionHistory" />
+  </wsdl:message>
+  <wsdl:message name="Get_IPADDBVersionHistorySoapOut">
+    <wsdl:part name="parameters" element="tns:Get_IPADDBVersionHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_IPADDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_IPADDetails" />
+  </wsdl:message>
+  <wsdl:message name="Get_IPADDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_IPADDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_IPADVersionNoSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_IPADVersionNo" />
+  </wsdl:message>
+  <wsdl:message name="Get_IPADVersionNoSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_IPADVersionNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Update_IPADDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:Update_IPADDetails" />
+  </wsdl:message>
+  <wsdl:message name="Update_IPADDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:Update_IPADDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Push_Pre_Production_Data_To_ProductionSoapIn">
+    <wsdl:part name="parameters" element="tns:Push_Pre_Production_Data_To_Production" />
+  </wsdl:message>
+  <wsdl:message name="Push_Pre_Production_Data_To_ProductionSoapOut">
+    <wsdl:part name="parameters" element="tns:Push_Pre_Production_Data_To_ProductionResponse" />
+  </wsdl:message>
+  <wsdl:message name="DatabaseSanityChecksSoapIn">
+    <wsdl:part name="parameters" element="tns:DatabaseSanityChecks" />
+  </wsdl:message>
+  <wsdl:message name="DatabaseSanityChecksSoapOut">
+    <wsdl:part name="parameters" element="tns:DatabaseSanityChecksResponse" />
+  </wsdl:message>
+  <wsdl:message name="APNPushRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:APNPushRequest" />
+  </wsdl:message>
+  <wsdl:message name="APNPushRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:APNPushRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="APNTableSchemaSoapIn">
+    <wsdl:part name="parameters" element="tns:APNTableSchema" />
+  </wsdl:message>
+  <wsdl:message name="APNTableSchemaSoapOut">
+    <wsdl:part name="parameters" element="tns:APNTableSchemaResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateAPNRequestMasterSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateAPNRequestMaster" />
+  </wsdl:message>
+  <wsdl:message name="CreateAPNRequestMasterSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateAPNRequestMasterResponse" />
+  </wsdl:message>
+  <wsdl:message name="Publish_DatabaseSoapIn">
+    <wsdl:part name="parameters" element="tns:Publish_Database" />
+  </wsdl:message>
+  <wsdl:message name="Publish_DatabaseSoapOut">
+    <wsdl:part name="parameters" element="tns:Publish_DatabaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFunctionalitiesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFunctionalities" />
+  </wsdl:message>
+  <wsdl:message name="GetFunctionalitiesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFunctionalitiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetReportsForFunctionalitySoapIn">
+    <wsdl:part name="parameters" element="tns:GetReportsForFunctionality" />
+  </wsdl:message>
+  <wsdl:message name="GetReportsForFunctionalitySoapOut">
+    <wsdl:part name="parameters" element="tns:GetReportsForFunctionalityResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetUserDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChangePwdSoapIn">
+    <wsdl:part name="parameters" element="tns:ChangePwd" />
+  </wsdl:message>
+  <wsdl:message name="ChangePwdSoapOut">
+    <wsdl:part name="parameters" element="tns:ChangePwdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsUserHasPermissionSoapIn">
+    <wsdl:part name="parameters" element="tns:IsUserHasPermission" />
+  </wsdl:message>
+  <wsdl:message name="IsUserHasPermissionSoapOut">
+    <wsdl:part name="parameters" element="tns:IsUserHasPermissionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUsersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUsers" />
+  </wsdl:message>
+  <wsdl:message name="GetUsersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRolesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRoles" />
+  </wsdl:message>
+  <wsdl:message name="GetRolesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStationsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStations" />
+  </wsdl:message>
+  <wsdl:message name="GetStationsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserProfileSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserProfile" />
+  </wsdl:message>
+  <wsdl:message name="GetUserProfileSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateUpdateUserProfileSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateUpdateUserProfile" />
+  </wsdl:message>
+  <wsdl:message name="CreateUpdateUserProfileSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateUpdateUserProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPagesFunctionalitiesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPagesFunctionalities" />
+  </wsdl:message>
+  <wsdl:message name="GetPagesFunctionalitiesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPagesFunctionalitiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRoleFunctionalitiesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRoleFunctionalities" />
+  </wsdl:message>
+  <wsdl:message name="GetRoleFunctionalitiesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRoleFunctionalitiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRoleFunctionalityLocationsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRoleFunctionalityLocations" />
+  </wsdl:message>
+  <wsdl:message name="GetRoleFunctionalityLocationsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRoleFunctionalityLocationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsRoleNameExistsSoapIn">
+    <wsdl:part name="parameters" element="tns:IsRoleNameExists" />
+  </wsdl:message>
+  <wsdl:message name="IsRoleNameExistsSoapOut">
+    <wsdl:part name="parameters" element="tns:IsRoleNameExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateRoleSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateRole" />
+  </wsdl:message>
+  <wsdl:message name="CreateRoleSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateRoleSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateRole" />
+  </wsdl:message>
+  <wsdl:message name="UpdateRoleSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteRoleSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteRole" />
+  </wsdl:message>
+  <wsdl:message name="DeleteRoleSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUserSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteUser" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUserSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDBDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDBDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetDBDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDBDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDBTableDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDBTableData" />
+  </wsdl:message>
+  <wsdl:message name="GetDBTableDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDBTableDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAircraftSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteAircraft" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAircraftSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteAircraftResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateAircraftSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateAircraft" />
+  </wsdl:message>
+  <wsdl:message name="CreateAircraftSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateAircraftResponse" />
+  </wsdl:message>
+  <wsdl:message name="Is_Database_Upgrade_RunningSoapIn">
+    <wsdl:part name="parameters" element="tns:Is_Database_Upgrade_Running" />
+  </wsdl:message>
+  <wsdl:message name="Is_Database_Upgrade_RunningSoapOut">
+    <wsdl:part name="parameters" element="tns:Is_Database_Upgrade_RunningResponse" />
+  </wsdl:message>
+  <wsdl:message name="Start_Database_Upgrade_SessionSoapIn">
+    <wsdl:part name="parameters" element="tns:Start_Database_Upgrade_Session" />
+  </wsdl:message>
+  <wsdl:message name="Start_Database_Upgrade_SessionSoapOut">
+    <wsdl:part name="parameters" element="tns:Start_Database_Upgrade_SessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Cancel_Database_Upgrade_SessionSoapIn">
+    <wsdl:part name="parameters" element="tns:Cancel_Database_Upgrade_Session" />
+  </wsdl:message>
+  <wsdl:message name="Cancel_Database_Upgrade_SessionSoapOut">
+    <wsdl:part name="parameters" element="tns:Cancel_Database_Upgrade_SessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_AircraftsSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Aircrafts" />
+  </wsdl:message>
+  <wsdl:message name="Get_AircraftsSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_AircraftsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAircraftSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateAircraft" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAircraftSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateAircraftResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAircraftConfigSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateAircraftConfig" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAircraftConfigSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateAircraftConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_Aircraft_ConfigSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Aircraft_Config" />
+  </wsdl:message>
+  <wsdl:message name="Get_Aircraft_ConfigSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Aircraft_ConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_RegistrationSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Registration" />
+  </wsdl:message>
+  <wsdl:message name="Get_RegistrationSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_RegistrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateRegistrationSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateRegistration" />
+  </wsdl:message>
+  <wsdl:message name="CreateRegistrationSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateRegistrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateRegistrationSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateRegistration" />
+  </wsdl:message>
+  <wsdl:message name="UpdateRegistrationSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateRegistrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteRegistrationSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteRegistration" />
+  </wsdl:message>
+  <wsdl:message name="DeleteRegistrationSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteRegistrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateSubfleetSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateSubfleet" />
+  </wsdl:message>
+  <wsdl:message name="CreateSubfleetSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateSubfleetResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSubfleetSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateSubfleet" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSubfleetSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateSubfleetResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_SubfleetSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Subfleet" />
+  </wsdl:message>
+  <wsdl:message name="Get_SubfleetSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_SubfleetResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSubfleetSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteSubfleet" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSubfleetSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteSubfleetResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_GalleyArmsSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_GalleyArms" />
+  </wsdl:message>
+  <wsdl:message name="Get_GalleyArmsSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_GalleyArmsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Create_Update_GalleyArmsSoapIn">
+    <wsdl:part name="parameters" element="tns:Create_Update_GalleyArms" />
+  </wsdl:message>
+  <wsdl:message name="Create_Update_GalleyArmsSoapOut">
+    <wsdl:part name="parameters" element="tns:Create_Update_GalleyArmsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_ZoneDefinitionSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_ZoneDefinition" />
+  </wsdl:message>
+  <wsdl:message name="Get_ZoneDefinitionSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_ZoneDefinitionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Create_Update_ZoneDefinationSoapIn">
+    <wsdl:part name="parameters" element="tns:Create_Update_ZoneDefination" />
+  </wsdl:message>
+  <wsdl:message name="Create_Update_ZoneDefinationSoapOut">
+    <wsdl:part name="parameters" element="tns:Create_Update_ZoneDefinationResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_Aircraft_Config_AdjustmentsSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Aircraft_Config_Adjustments" />
+  </wsdl:message>
+  <wsdl:message name="Get_Aircraft_Config_AdjustmentsSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Aircraft_Config_AdjustmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Create_Update_AirCraftConfigAdjSoapIn">
+    <wsdl:part name="parameters" element="tns:Create_Update_AirCraftConfigAdj" />
+  </wsdl:message>
+  <wsdl:message name="Create_Update_AirCraftConfigAdjSoapOut">
+    <wsdl:part name="parameters" element="tns:Create_Update_AirCraftConfigAdjResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateChoice_ListSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateChoice_List" />
+  </wsdl:message>
+  <wsdl:message name="CreateChoice_ListSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateChoice_ListResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteChoice_ListSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteChoice_List" />
+  </wsdl:message>
+  <wsdl:message name="DeleteChoice_ListSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteChoice_ListResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateChoice_ListSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateChoice_List" />
+  </wsdl:message>
+  <wsdl:message name="UpdateChoice_ListSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateChoice_ListResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_ChoiceListSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_ChoiceList" />
+  </wsdl:message>
+  <wsdl:message name="Get_ChoiceListSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_ChoiceListResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateChoicesSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateChoices" />
+  </wsdl:message>
+  <wsdl:message name="CreateChoicesSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateChoicesResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateChoicesSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateChoices" />
+  </wsdl:message>
+  <wsdl:message name="UpdateChoicesSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateChoicesResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_ChoicesSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Choices" />
+  </wsdl:message>
+  <wsdl:message name="Get_ChoicesSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_ChoicesResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteChoicesSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteChoices" />
+  </wsdl:message>
+  <wsdl:message name="DeleteChoicesSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteChoicesResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_ULDDefinitonSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_ULDDefiniton" />
+  </wsdl:message>
+  <wsdl:message name="Get_ULDDefinitonSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_ULDDefinitonResponse" />
+  </wsdl:message>
+  <wsdl:message name="Create_Update_ULDDefinitionSoapIn">
+    <wsdl:part name="parameters" element="tns:Create_Update_ULDDefinition" />
+  </wsdl:message>
+  <wsdl:message name="Create_Update_ULDDefinitionSoapOut">
+    <wsdl:part name="parameters" element="tns:Create_Update_ULDDefinitionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Create_Update_OprLimitSoapIn">
+    <wsdl:part name="parameters" element="tns:Create_Update_OprLimit" />
+  </wsdl:message>
+  <wsdl:message name="Create_Update_OprLimitSoapOut">
+    <wsdl:part name="parameters" element="tns:Create_Update_OprLimitResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_OperationalLimitSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_OperationalLimit" />
+  </wsdl:message>
+  <wsdl:message name="Get_OperationalLimitSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_OperationalLimitResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_ULDPositionSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_ULDPosition" />
+  </wsdl:message>
+  <wsdl:message name="Get_ULDPositionSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_ULDPositionResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateUpdateAirCraftPostionSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateUpdateAirCraftPostion" />
+  </wsdl:message>
+  <wsdl:message name="CreateUpdateAirCraftPostionSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateUpdateAirCraftPostionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_UnderFloor_CompSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_UnderFloor_Comp" />
+  </wsdl:message>
+  <wsdl:message name="Get_UnderFloor_CompSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_UnderFloor_CompResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateUpdateUnderFloorCompSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateUpdateUnderFloorComp" />
+  </wsdl:message>
+  <wsdl:message name="CreateUpdateUnderFloorCompSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateUpdateUnderFloorCompResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAircraftConfigDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAircraftConfigDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetAircraftConfigDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAircraftConfigDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetULDConfigDefaultDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetULDConfigDefaultDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetULDConfigDefaultDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetULDConfigDefaultDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_UnderFloorSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_UnderFloor" />
+  </wsdl:message>
+  <wsdl:message name="Get_UnderFloorSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_UnderFloorResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WNB_Admin_WSSoap">
+    <wsdl:operation name="CreateUpdateUnderFloor">
+      <wsdl:input message="tns:CreateUpdateUnderFloorSoapIn" />
+      <wsdl:output message="tns:CreateUpdateUnderFloorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Create_Update_ServiceDefinition">
+      <wsdl:input message="tns:Create_Update_ServiceDefinitionSoapIn" />
+      <wsdl:output message="tns:Create_Update_ServiceDefinitionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_ChoiceListByChoicelistID">
+      <wsdl:input message="tns:Get_ChoiceListByChoicelistIDSoapIn" />
+      <wsdl:output message="tns:Get_ChoiceListByChoicelistIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_ServiceDefinition">
+      <wsdl:input message="tns:Get_ServiceDefinitionSoapIn" />
+      <wsdl:output message="tns:Get_ServiceDefinitionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Create_Update_ServiceData">
+      <wsdl:input message="tns:Create_Update_ServiceDataSoapIn" />
+      <wsdl:output message="tns:Create_Update_ServiceDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_ServiceData">
+      <wsdl:input message="tns:Get_ServiceDataSoapIn" />
+      <wsdl:output message="tns:Get_ServiceDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_GalleyWeight">
+      <wsdl:input message="tns:Get_GalleyWeightSoapIn" />
+      <wsdl:output message="tns:Get_GalleyWeightSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_ULDConfiguration">
+      <wsdl:input message="tns:Get_ULDConfigurationSoapIn" />
+      <wsdl:output message="tns:Get_ULDConfigurationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_IPADUDID">
+      <wsdl:input message="tns:Get_IPADUDIDSoapIn" />
+      <wsdl:output message="tns:Get_IPADUDIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_IPADDBVersionHistory">
+      <wsdl:input message="tns:Get_IPADDBVersionHistorySoapIn" />
+      <wsdl:output message="tns:Get_IPADDBVersionHistorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_IPADDetails">
+      <wsdl:input message="tns:Get_IPADDetailsSoapIn" />
+      <wsdl:output message="tns:Get_IPADDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_IPADVersionNo">
+      <wsdl:input message="tns:Get_IPADVersionNoSoapIn" />
+      <wsdl:output message="tns:Get_IPADVersionNoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_IPADDetails">
+      <wsdl:input message="tns:Update_IPADDetailsSoapIn" />
+      <wsdl:output message="tns:Update_IPADDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Push_Pre_Production_Data_To_Production">
+      <wsdl:input message="tns:Push_Pre_Production_Data_To_ProductionSoapIn" />
+      <wsdl:output message="tns:Push_Pre_Production_Data_To_ProductionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DatabaseSanityChecks">
+      <wsdl:input message="tns:DatabaseSanityChecksSoapIn" />
+      <wsdl:output message="tns:DatabaseSanityChecksSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="APNPushRequest">
+      <wsdl:input message="tns:APNPushRequestSoapIn" />
+      <wsdl:output message="tns:APNPushRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="APNTableSchema">
+      <wsdl:input message="tns:APNTableSchemaSoapIn" />
+      <wsdl:output message="tns:APNTableSchemaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateAPNRequestMaster">
+      <wsdl:input message="tns:CreateAPNRequestMasterSoapIn" />
+      <wsdl:output message="tns:CreateAPNRequestMasterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Publish_Database">
+      <wsdl:input message="tns:Publish_DatabaseSoapIn" />
+      <wsdl:output message="tns:Publish_DatabaseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFunctionalities">
+      <wsdl:input message="tns:GetFunctionalitiesSoapIn" />
+      <wsdl:output message="tns:GetFunctionalitiesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReportsForFunctionality">
+      <wsdl:input message="tns:GetReportsForFunctionalitySoapIn" />
+      <wsdl:output message="tns:GetReportsForFunctionalitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetails">
+      <wsdl:input message="tns:GetUserDetailsSoapIn" />
+      <wsdl:output message="tns:GetUserDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangePwd">
+      <wsdl:input message="tns:ChangePwdSoapIn" />
+      <wsdl:output message="tns:ChangePwdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsUserHasPermission">
+      <wsdl:input message="tns:IsUserHasPermissionSoapIn" />
+      <wsdl:output message="tns:IsUserHasPermissionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsers">
+      <wsdl:input message="tns:GetUsersSoapIn" />
+      <wsdl:output message="tns:GetUsersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRoles">
+      <wsdl:input message="tns:GetRolesSoapIn" />
+      <wsdl:output message="tns:GetRolesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStations">
+      <wsdl:input message="tns:GetStationsSoapIn" />
+      <wsdl:output message="tns:GetStationsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfile">
+      <wsdl:input message="tns:GetUserProfileSoapIn" />
+      <wsdl:output message="tns:GetUserProfileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateUpdateUserProfile">
+      <wsdl:input message="tns:CreateUpdateUserProfileSoapIn" />
+      <wsdl:output message="tns:CreateUpdateUserProfileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPagesFunctionalities">
+      <wsdl:input message="tns:GetPagesFunctionalitiesSoapIn" />
+      <wsdl:output message="tns:GetPagesFunctionalitiesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleFunctionalities">
+      <wsdl:input message="tns:GetRoleFunctionalitiesSoapIn" />
+      <wsdl:output message="tns:GetRoleFunctionalitiesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleFunctionalityLocations">
+      <wsdl:input message="tns:GetRoleFunctionalityLocationsSoapIn" />
+      <wsdl:output message="tns:GetRoleFunctionalityLocationsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsRoleNameExists">
+      <wsdl:input message="tns:IsRoleNameExistsSoapIn" />
+      <wsdl:output message="tns:IsRoleNameExistsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateRole">
+      <wsdl:input message="tns:CreateRoleSoapIn" />
+      <wsdl:output message="tns:CreateRoleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRole">
+      <wsdl:input message="tns:UpdateRoleSoapIn" />
+      <wsdl:output message="tns:UpdateRoleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRole">
+      <wsdl:input message="tns:DeleteRoleSoapIn" />
+      <wsdl:output message="tns:DeleteRoleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <wsdl:input message="tns:DeleteUserSoapIn" />
+      <wsdl:output message="tns:DeleteUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDBDetails">
+      <wsdl:input message="tns:GetDBDetailsSoapIn" />
+      <wsdl:output message="tns:GetDBDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDBTableData">
+      <wsdl:input message="tns:GetDBTableDataSoapIn" />
+      <wsdl:output message="tns:GetDBTableDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAircraft">
+      <wsdl:input message="tns:DeleteAircraftSoapIn" />
+      <wsdl:output message="tns:DeleteAircraftSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateAircraft">
+      <wsdl:input message="tns:CreateAircraftSoapIn" />
+      <wsdl:output message="tns:CreateAircraftSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Is_Database_Upgrade_Running">
+      <wsdl:input message="tns:Is_Database_Upgrade_RunningSoapIn" />
+      <wsdl:output message="tns:Is_Database_Upgrade_RunningSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Start_Database_Upgrade_Session">
+      <wsdl:input message="tns:Start_Database_Upgrade_SessionSoapIn" />
+      <wsdl:output message="tns:Start_Database_Upgrade_SessionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Cancel_Database_Upgrade_Session">
+      <wsdl:input message="tns:Cancel_Database_Upgrade_SessionSoapIn" />
+      <wsdl:output message="tns:Cancel_Database_Upgrade_SessionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Aircrafts">
+      <wsdl:input message="tns:Get_AircraftsSoapIn" />
+      <wsdl:output message="tns:Get_AircraftsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAircraft">
+      <wsdl:input message="tns:UpdateAircraftSoapIn" />
+      <wsdl:output message="tns:UpdateAircraftSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAircraftConfig">
+      <wsdl:input message="tns:UpdateAircraftConfigSoapIn" />
+      <wsdl:output message="tns:UpdateAircraftConfigSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Aircraft_Config">
+      <wsdl:input message="tns:Get_Aircraft_ConfigSoapIn" />
+      <wsdl:output message="tns:Get_Aircraft_ConfigSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Registration">
+      <wsdl:input message="tns:Get_RegistrationSoapIn" />
+      <wsdl:output message="tns:Get_RegistrationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateRegistration">
+      <wsdl:input message="tns:CreateRegistrationSoapIn" />
+      <wsdl:output message="tns:CreateRegistrationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRegistration">
+      <wsdl:input message="tns:UpdateRegistrationSoapIn" />
+      <wsdl:output message="tns:UpdateRegistrationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRegistration">
+      <wsdl:input message="tns:DeleteRegistrationSoapIn" />
+      <wsdl:output message="tns:DeleteRegistrationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateSubfleet">
+      <wsdl:input message="tns:CreateSubfleetSoapIn" />
+      <wsdl:output message="tns:CreateSubfleetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSubfleet">
+      <wsdl:input message="tns:UpdateSubfleetSoapIn" />
+      <wsdl:output message="tns:UpdateSubfleetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Subfleet">
+      <wsdl:input message="tns:Get_SubfleetSoapIn" />
+      <wsdl:output message="tns:Get_SubfleetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSubfleet">
+      <wsdl:input message="tns:DeleteSubfleetSoapIn" />
+      <wsdl:output message="tns:DeleteSubfleetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_GalleyArms">
+      <wsdl:input message="tns:Get_GalleyArmsSoapIn" />
+      <wsdl:output message="tns:Get_GalleyArmsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Create_Update_GalleyArms">
+      <wsdl:input message="tns:Create_Update_GalleyArmsSoapIn" />
+      <wsdl:output message="tns:Create_Update_GalleyArmsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_ZoneDefinition">
+      <wsdl:input message="tns:Get_ZoneDefinitionSoapIn" />
+      <wsdl:output message="tns:Get_ZoneDefinitionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Create_Update_ZoneDefination">
+      <wsdl:input message="tns:Create_Update_ZoneDefinationSoapIn" />
+      <wsdl:output message="tns:Create_Update_ZoneDefinationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Aircraft_Config_Adjustments">
+      <wsdl:input message="tns:Get_Aircraft_Config_AdjustmentsSoapIn" />
+      <wsdl:output message="tns:Get_Aircraft_Config_AdjustmentsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Create_Update_AirCraftConfigAdj">
+      <wsdl:input message="tns:Create_Update_AirCraftConfigAdjSoapIn" />
+      <wsdl:output message="tns:Create_Update_AirCraftConfigAdjSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateChoice_List">
+      <wsdl:input message="tns:CreateChoice_ListSoapIn" />
+      <wsdl:output message="tns:CreateChoice_ListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteChoice_List">
+      <wsdl:input message="tns:DeleteChoice_ListSoapIn" />
+      <wsdl:output message="tns:DeleteChoice_ListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateChoice_List">
+      <wsdl:input message="tns:UpdateChoice_ListSoapIn" />
+      <wsdl:output message="tns:UpdateChoice_ListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_ChoiceList">
+      <wsdl:input message="tns:Get_ChoiceListSoapIn" />
+      <wsdl:output message="tns:Get_ChoiceListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateChoices">
+      <wsdl:input message="tns:CreateChoicesSoapIn" />
+      <wsdl:output message="tns:CreateChoicesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateChoices">
+      <wsdl:input message="tns:UpdateChoicesSoapIn" />
+      <wsdl:output message="tns:UpdateChoicesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Choices">
+      <wsdl:input message="tns:Get_ChoicesSoapIn" />
+      <wsdl:output message="tns:Get_ChoicesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteChoices">
+      <wsdl:input message="tns:DeleteChoicesSoapIn" />
+      <wsdl:output message="tns:DeleteChoicesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_ULDDefiniton">
+      <wsdl:input message="tns:Get_ULDDefinitonSoapIn" />
+      <wsdl:output message="tns:Get_ULDDefinitonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Create_Update_ULDDefinition">
+      <wsdl:input message="tns:Create_Update_ULDDefinitionSoapIn" />
+      <wsdl:output message="tns:Create_Update_ULDDefinitionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Create_Update_OprLimit">
+      <wsdl:input message="tns:Create_Update_OprLimitSoapIn" />
+      <wsdl:output message="tns:Create_Update_OprLimitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_OperationalLimit">
+      <wsdl:input message="tns:Get_OperationalLimitSoapIn" />
+      <wsdl:output message="tns:Get_OperationalLimitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_ULDPosition">
+      <wsdl:input message="tns:Get_ULDPositionSoapIn" />
+      <wsdl:output message="tns:Get_ULDPositionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateUpdateAirCraftPostion">
+      <wsdl:input message="tns:CreateUpdateAirCraftPostionSoapIn" />
+      <wsdl:output message="tns:CreateUpdateAirCraftPostionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_UnderFloor_Comp">
+      <wsdl:input message="tns:Get_UnderFloor_CompSoapIn" />
+      <wsdl:output message="tns:Get_UnderFloor_CompSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateUpdateUnderFloorComp">
+      <wsdl:input message="tns:CreateUpdateUnderFloorCompSoapIn" />
+      <wsdl:output message="tns:CreateUpdateUnderFloorCompSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAircraftConfigDetails">
+      <wsdl:input message="tns:GetAircraftConfigDetailsSoapIn" />
+      <wsdl:output message="tns:GetAircraftConfigDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetULDConfigDefaultDetails">
+      <wsdl:input message="tns:GetULDConfigDefaultDetailsSoapIn" />
+      <wsdl:output message="tns:GetULDConfigDefaultDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_UnderFloor">
+      <wsdl:input message="tns:Get_UnderFloorSoapIn" />
+      <wsdl:output message="tns:Get_UnderFloorSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WNB_Admin_WSSoap" type="tns:WNB_Admin_WSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateUpdateUnderFloor">
+      <soap:operation soapAction="http://tempuri.org/CreateUpdateUnderFloor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Create_Update_ServiceDefinition">
+      <soap:operation soapAction="http://tempuri.org/Create_Update_ServiceDefinition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ChoiceListByChoicelistID">
+      <soap:operation soapAction="http://tempuri.org/Get_ChoiceListByChoicelistID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ServiceDefinition">
+      <soap:operation soapAction="http://tempuri.org/Get_ServiceDefinition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Create_Update_ServiceData">
+      <soap:operation soapAction="http://tempuri.org/Create_Update_ServiceData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ServiceData">
+      <soap:operation soapAction="http://tempuri.org/Get_ServiceData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_GalleyWeight">
+      <soap:operation soapAction="http://tempuri.org/Get_GalleyWeight" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ULDConfiguration">
+      <soap:operation soapAction="http://tempuri.org/Get_ULDConfiguration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_IPADUDID">
+      <soap:operation soapAction="http://tempuri.org/Get_IPADUDID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_IPADDBVersionHistory">
+      <soap:operation soapAction="http://tempuri.org/Get_IPADDBVersionHistory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_IPADDetails">
+      <soap:operation soapAction="http://tempuri.org/Get_IPADDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_IPADVersionNo">
+      <soap:operation soapAction="http://tempuri.org/Get_IPADVersionNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_IPADDetails">
+      <soap:operation soapAction="http://tempuri.org/Update_IPADDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Push_Pre_Production_Data_To_Production">
+      <soap:operation soapAction="http://tempuri.org/Push_Pre_Production_Data_To_Production" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DatabaseSanityChecks">
+      <soap:operation soapAction="http://tempuri.org/DatabaseSanityChecks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="APNPushRequest">
+      <soap:operation soapAction="http://tempuri.org/APNPushRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="APNTableSchema">
+      <soap:operation soapAction="http://tempuri.org/APNTableSchema" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAPNRequestMaster">
+      <soap:operation soapAction="http://tempuri.org/CreateAPNRequestMaster" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Publish_Database">
+      <soap:operation soapAction="http://tempuri.org/Publish_Database" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFunctionalities">
+      <soap:operation soapAction="http://tempuri.org/GetFunctionalities" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReportsForFunctionality">
+      <soap:operation soapAction="http://tempuri.org/GetReportsForFunctionality" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetails">
+      <soap:operation soapAction="http://tempuri.org/GetUserDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangePwd">
+      <soap:operation soapAction="http://tempuri.org/ChangePwd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsUserHasPermission">
+      <soap:operation soapAction="http://tempuri.org/IsUserHasPermission" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsers">
+      <soap:operation soapAction="http://tempuri.org/GetUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoles">
+      <soap:operation soapAction="http://tempuri.org/GetRoles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStations">
+      <soap:operation soapAction="http://tempuri.org/GetStations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfile">
+      <soap:operation soapAction="http://tempuri.org/GetUserProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUpdateUserProfile">
+      <soap:operation soapAction="http://tempuri.org/CreateUpdateUserProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPagesFunctionalities">
+      <soap:operation soapAction="http://tempuri.org/GetPagesFunctionalities" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleFunctionalities">
+      <soap:operation soapAction="http://tempuri.org/GetRoleFunctionalities" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleFunctionalityLocations">
+      <soap:operation soapAction="http://tempuri.org/GetRoleFunctionalityLocations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsRoleNameExists">
+      <soap:operation soapAction="http://tempuri.org/IsRoleNameExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateRole">
+      <soap:operation soapAction="http://tempuri.org/CreateRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRole">
+      <soap:operation soapAction="http://tempuri.org/UpdateRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRole">
+      <soap:operation soapAction="http://tempuri.org/DeleteRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <soap:operation soapAction="http://tempuri.org/DeleteUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDBDetails">
+      <soap:operation soapAction="http://tempuri.org/GetDBDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDBTableData">
+      <soap:operation soapAction="http://tempuri.org/GetDBTableData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAircraft">
+      <soap:operation soapAction="http://tempuri.org/DeleteAircraft" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAircraft">
+      <soap:operation soapAction="http://tempuri.org/CreateAircraft" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Is_Database_Upgrade_Running">
+      <soap:operation soapAction="http://tempuri.org/Is_Database_Upgrade_Running" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Start_Database_Upgrade_Session">
+      <soap:operation soapAction="http://tempuri.org/Start_Database_Upgrade_Session" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Cancel_Database_Upgrade_Session">
+      <soap:operation soapAction="http://tempuri.org/Cancel_Database_Upgrade_Session" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Aircrafts">
+      <soap:operation soapAction="http://tempuri.org/Get_Aircrafts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAircraft">
+      <soap:operation soapAction="http://tempuri.org/UpdateAircraft" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAircraftConfig">
+      <soap:operation soapAction="http://tempuri.org/UpdateAircraftConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Aircraft_Config">
+      <soap:operation soapAction="http://tempuri.org/Get_Aircraft_Config" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Registration">
+      <soap:operation soapAction="http://tempuri.org/Get_Registration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateRegistration">
+      <soap:operation soapAction="http://tempuri.org/CreateRegistration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRegistration">
+      <soap:operation soapAction="http://tempuri.org/UpdateRegistration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRegistration">
+      <soap:operation soapAction="http://tempuri.org/DeleteRegistration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSubfleet">
+      <soap:operation soapAction="http://tempuri.org/CreateSubfleet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSubfleet">
+      <soap:operation soapAction="http://tempuri.org/UpdateSubfleet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Subfleet">
+      <soap:operation soapAction="http://tempuri.org/Get_Subfleet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSubfleet">
+      <soap:operation soapAction="http://tempuri.org/DeleteSubfleet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_GalleyArms">
+      <soap:operation soapAction="http://tempuri.org/Get_GalleyArms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Create_Update_GalleyArms">
+      <soap:operation soapAction="http://tempuri.org/Create_Update_GalleyArms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ZoneDefinition">
+      <soap:operation soapAction="http://tempuri.org/Get_ZoneDefinition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Create_Update_ZoneDefination">
+      <soap:operation soapAction="http://tempuri.org/Create_Update_ZoneDefination" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Aircraft_Config_Adjustments">
+      <soap:operation soapAction="http://tempuri.org/Get_Aircraft_Config_Adjustments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Create_Update_AirCraftConfigAdj">
+      <soap:operation soapAction="http://tempuri.org/Create_Update_AirCraftConfigAdj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateChoice_List">
+      <soap:operation soapAction="http://tempuri.org/CreateChoice_List" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteChoice_List">
+      <soap:operation soapAction="http://tempuri.org/DeleteChoice_List" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateChoice_List">
+      <soap:operation soapAction="http://tempuri.org/UpdateChoice_List" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ChoiceList">
+      <soap:operation soapAction="http://tempuri.org/Get_ChoiceList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateChoices">
+      <soap:operation soapAction="http://tempuri.org/CreateChoices" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateChoices">
+      <soap:operation soapAction="http://tempuri.org/UpdateChoices" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Choices">
+      <soap:operation soapAction="http://tempuri.org/Get_Choices" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteChoices">
+      <soap:operation soapAction="http://tempuri.org/DeleteChoices" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ULDDefiniton">
+      <soap:operation soapAction="http://tempuri.org/Get_ULDDefiniton" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Create_Update_ULDDefinition">
+      <soap:operation soapAction="http://tempuri.org/Create_Update_ULDDefinition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Create_Update_OprLimit">
+      <soap:operation soapAction="http://tempuri.org/Create_Update_OprLimit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_OperationalLimit">
+      <soap:operation soapAction="http://tempuri.org/Get_OperationalLimit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ULDPosition">
+      <soap:operation soapAction="http://tempuri.org/Get_ULDPosition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUpdateAirCraftPostion">
+      <soap:operation soapAction="http://tempuri.org/CreateUpdateAirCraftPostion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_UnderFloor_Comp">
+      <soap:operation soapAction="http://tempuri.org/Get_UnderFloor_Comp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUpdateUnderFloorComp">
+      <soap:operation soapAction="http://tempuri.org/CreateUpdateUnderFloorComp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAircraftConfigDetails">
+      <soap:operation soapAction="http://tempuri.org/GetAircraftConfigDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetULDConfigDefaultDetails">
+      <soap:operation soapAction="http://tempuri.org/GetULDConfigDefaultDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_UnderFloor">
+      <soap:operation soapAction="http://tempuri.org/Get_UnderFloor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WNB_Admin_WSSoap12" type="tns:WNB_Admin_WSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateUpdateUnderFloor">
+      <soap12:operation soapAction="http://tempuri.org/CreateUpdateUnderFloor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Create_Update_ServiceDefinition">
+      <soap12:operation soapAction="http://tempuri.org/Create_Update_ServiceDefinition" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ChoiceListByChoicelistID">
+      <soap12:operation soapAction="http://tempuri.org/Get_ChoiceListByChoicelistID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ServiceDefinition">
+      <soap12:operation soapAction="http://tempuri.org/Get_ServiceDefinition" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Create_Update_ServiceData">
+      <soap12:operation soapAction="http://tempuri.org/Create_Update_ServiceData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ServiceData">
+      <soap12:operation soapAction="http://tempuri.org/Get_ServiceData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_GalleyWeight">
+      <soap12:operation soapAction="http://tempuri.org/Get_GalleyWeight" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ULDConfiguration">
+      <soap12:operation soapAction="http://tempuri.org/Get_ULDConfiguration" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_IPADUDID">
+      <soap12:operation soapAction="http://tempuri.org/Get_IPADUDID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_IPADDBVersionHistory">
+      <soap12:operation soapAction="http://tempuri.org/Get_IPADDBVersionHistory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_IPADDetails">
+      <soap12:operation soapAction="http://tempuri.org/Get_IPADDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_IPADVersionNo">
+      <soap12:operation soapAction="http://tempuri.org/Get_IPADVersionNo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_IPADDetails">
+      <soap12:operation soapAction="http://tempuri.org/Update_IPADDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Push_Pre_Production_Data_To_Production">
+      <soap12:operation soapAction="http://tempuri.org/Push_Pre_Production_Data_To_Production" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DatabaseSanityChecks">
+      <soap12:operation soapAction="http://tempuri.org/DatabaseSanityChecks" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="APNPushRequest">
+      <soap12:operation soapAction="http://tempuri.org/APNPushRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="APNTableSchema">
+      <soap12:operation soapAction="http://tempuri.org/APNTableSchema" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAPNRequestMaster">
+      <soap12:operation soapAction="http://tempuri.org/CreateAPNRequestMaster" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Publish_Database">
+      <soap12:operation soapAction="http://tempuri.org/Publish_Database" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFunctionalities">
+      <soap12:operation soapAction="http://tempuri.org/GetFunctionalities" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReportsForFunctionality">
+      <soap12:operation soapAction="http://tempuri.org/GetReportsForFunctionality" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetUserDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangePwd">
+      <soap12:operation soapAction="http://tempuri.org/ChangePwd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsUserHasPermission">
+      <soap12:operation soapAction="http://tempuri.org/IsUserHasPermission" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsers">
+      <soap12:operation soapAction="http://tempuri.org/GetUsers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoles">
+      <soap12:operation soapAction="http://tempuri.org/GetRoles" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStations">
+      <soap12:operation soapAction="http://tempuri.org/GetStations" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfile">
+      <soap12:operation soapAction="http://tempuri.org/GetUserProfile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUpdateUserProfile">
+      <soap12:operation soapAction="http://tempuri.org/CreateUpdateUserProfile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPagesFunctionalities">
+      <soap12:operation soapAction="http://tempuri.org/GetPagesFunctionalities" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleFunctionalities">
+      <soap12:operation soapAction="http://tempuri.org/GetRoleFunctionalities" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoleFunctionalityLocations">
+      <soap12:operation soapAction="http://tempuri.org/GetRoleFunctionalityLocations" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsRoleNameExists">
+      <soap12:operation soapAction="http://tempuri.org/IsRoleNameExists" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateRole">
+      <soap12:operation soapAction="http://tempuri.org/CreateRole" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRole">
+      <soap12:operation soapAction="http://tempuri.org/UpdateRole" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRole">
+      <soap12:operation soapAction="http://tempuri.org/DeleteRole" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <soap12:operation soapAction="http://tempuri.org/DeleteUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDBDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetDBDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDBTableData">
+      <soap12:operation soapAction="http://tempuri.org/GetDBTableData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAircraft">
+      <soap12:operation soapAction="http://tempuri.org/DeleteAircraft" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAircraft">
+      <soap12:operation soapAction="http://tempuri.org/CreateAircraft" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Is_Database_Upgrade_Running">
+      <soap12:operation soapAction="http://tempuri.org/Is_Database_Upgrade_Running" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Start_Database_Upgrade_Session">
+      <soap12:operation soapAction="http://tempuri.org/Start_Database_Upgrade_Session" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Cancel_Database_Upgrade_Session">
+      <soap12:operation soapAction="http://tempuri.org/Cancel_Database_Upgrade_Session" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Aircrafts">
+      <soap12:operation soapAction="http://tempuri.org/Get_Aircrafts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAircraft">
+      <soap12:operation soapAction="http://tempuri.org/UpdateAircraft" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAircraftConfig">
+      <soap12:operation soapAction="http://tempuri.org/UpdateAircraftConfig" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Aircraft_Config">
+      <soap12:operation soapAction="http://tempuri.org/Get_Aircraft_Config" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Registration">
+      <soap12:operation soapAction="http://tempuri.org/Get_Registration" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateRegistration">
+      <soap12:operation soapAction="http://tempuri.org/CreateRegistration" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRegistration">
+      <soap12:operation soapAction="http://tempuri.org/UpdateRegistration" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRegistration">
+      <soap12:operation soapAction="http://tempuri.org/DeleteRegistration" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSubfleet">
+      <soap12:operation soapAction="http://tempuri.org/CreateSubfleet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSubfleet">
+      <soap12:operation soapAction="http://tempuri.org/UpdateSubfleet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Subfleet">
+      <soap12:operation soapAction="http://tempuri.org/Get_Subfleet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSubfleet">
+      <soap12:operation soapAction="http://tempuri.org/DeleteSubfleet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_GalleyArms">
+      <soap12:operation soapAction="http://tempuri.org/Get_GalleyArms" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Create_Update_GalleyArms">
+      <soap12:operation soapAction="http://tempuri.org/Create_Update_GalleyArms" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ZoneDefinition">
+      <soap12:operation soapAction="http://tempuri.org/Get_ZoneDefinition" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Create_Update_ZoneDefination">
+      <soap12:operation soapAction="http://tempuri.org/Create_Update_ZoneDefination" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Aircraft_Config_Adjustments">
+      <soap12:operation soapAction="http://tempuri.org/Get_Aircraft_Config_Adjustments" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Create_Update_AirCraftConfigAdj">
+      <soap12:operation soapAction="http://tempuri.org/Create_Update_AirCraftConfigAdj" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateChoice_List">
+      <soap12:operation soapAction="http://tempuri.org/CreateChoice_List" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteChoice_List">
+      <soap12:operation soapAction="http://tempuri.org/DeleteChoice_List" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateChoice_List">
+      <soap12:operation soapAction="http://tempuri.org/UpdateChoice_List" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ChoiceList">
+      <soap12:operation soapAction="http://tempuri.org/Get_ChoiceList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateChoices">
+      <soap12:operation soapAction="http://tempuri.org/CreateChoices" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateChoices">
+      <soap12:operation soapAction="http://tempuri.org/UpdateChoices" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Choices">
+      <soap12:operation soapAction="http://tempuri.org/Get_Choices" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteChoices">
+      <soap12:operation soapAction="http://tempuri.org/DeleteChoices" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ULDDefiniton">
+      <soap12:operation soapAction="http://tempuri.org/Get_ULDDefiniton" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Create_Update_ULDDefinition">
+      <soap12:operation soapAction="http://tempuri.org/Create_Update_ULDDefinition" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Create_Update_OprLimit">
+      <soap12:operation soapAction="http://tempuri.org/Create_Update_OprLimit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_OperationalLimit">
+      <soap12:operation soapAction="http://tempuri.org/Get_OperationalLimit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ULDPosition">
+      <soap12:operation soapAction="http://tempuri.org/Get_ULDPosition" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUpdateAirCraftPostion">
+      <soap12:operation soapAction="http://tempuri.org/CreateUpdateAirCraftPostion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_UnderFloor_Comp">
+      <soap12:operation soapAction="http://tempuri.org/Get_UnderFloor_Comp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUpdateUnderFloorComp">
+      <soap12:operation soapAction="http://tempuri.org/CreateUpdateUnderFloorComp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAircraftConfigDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetAircraftConfigDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetULDConfigDefaultDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetULDConfigDefaultDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_UnderFloor">
+      <soap12:operation soapAction="http://tempuri.org/Get_UnderFloor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WNB_Admin_WS">
+    <wsdl:port name="WNB_Admin_WSSoap" binding="tns:WNB_Admin_WSSoap">
+      <soap:address location="http://localhost:55484/WNB_Admin_WS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WNB_Admin_WSSoap12" binding="tns:WNB_Admin_WSSoap12">
+      <soap12:address location="http://localhost:55484/WNB_Admin_WS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

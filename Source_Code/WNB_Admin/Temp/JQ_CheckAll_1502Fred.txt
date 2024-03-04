@@ -1,0 +1,14 @@
+Airport Data Check File -     Jetstar     - Cycle 1502
+Run by Fred at 16/01/2015 11:47:09
+
+Error:  
+YMML Melbourne    Calculated Mag Var 11.48276 differs from coded MagVar-11 by more than 1.5 
+
+
+
+
+
+End of Airport Data Check File - Cycle 1502
+Completed by Fred at 16/01/2015 11:47:09
+
+Checked: ______________________________________   Date: ______________________

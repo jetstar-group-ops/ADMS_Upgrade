@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <Table11>
+    <IATA>SYD</IATA>
+    <Name >Sydney Intl</Name >
+    <City >Sydney</City >
+    <Country >Australia</Country >
+    <Elevation >21</Elevation >
+    <MagDir >E</MagDir >
+    <MagDeg >13</MagDeg >
+    <MagMin >0</MagMin >
+    <MagSec >0</MagSec >
+    <LatDir >S</LatDir >
+    <LatDeg >33</LatDeg >
+    <LatMin >56</LatMin >
+    <LatSec >45.97</LatSec >
+    <LonDir >E</LonDir >
+    <LonDeg >151</LonDeg >
+    <LonMin >10</LonMin >
+    <LonSec >37.98</LonSec >
+    <TORA>2530</TORA>
+    <TODA >2620</TODA >
+    <ASDA >2560</ASDA >
+    <LDA >2530</LDA >
+    <DispThr >0</DispThr >
+    <DispTO >0</DispTO >
+    <ResaTo>0</ResaTo>
+    <ResaLd >0</ResaLd >
+    <Width >45</Width >
+    <Shoulder >30</Shoulder >
+    <Slope >0.05</Slope >
+    <GaGrad >2.1</GaGrad >
+    <LineUpAngle>90</LineUpAngle>
+    <ElevStartTORA >16</ElevStartTORA >
+    <LatDir >S</LatDir >
+    <LatDeg >33</LatDeg >
+    <LatMin >56</LatMin >
+    <LatSec >37.49</LatSec >
+    <LonDir>E</LonDir>
+    <LonDeg>151</LonDeg>
+    <LonMin >9</LonMin >
+    <LonSec >49.08</LonSec >
+    <MagHdg >62</MagHdg >
+    <ICAO >YSSY</ICAO >
+    <RwyId >7</RwyId >
+    <RwyMod>Std</RwyMod>
+    <AirlineCode >JQ</AirlineCode >
+    <SlopeDir >Up</SlopeDir >
+    <ICAO >YSSY</ICAO >
+    <AirlineCode >JQ</AirlineCode >
+    <AEProc >NULL</AEProc >
+    <EOProc >TRK 062.</EOProc >
+    <PostProc >TRK 090. Climb to MSA</PostProc >
+    <Comment >NULL</Comment >
+    <LandComment>NULL</LandComment>
+    <ICAO >YSSY</ICAO >
+    <AirlineCode >JQ</AirlineCode >
+    <RwyId >7</RwyId >
+    <RwyMod >Std</RwyMod >
+    <Distance >2626</Distance >
+    <Elevation >25</Elevation >
+    <LatOffSet >0</LatOffSet >
+    <ObsRef> Type A</ObsRef>
+    <Ident >G2</Ident >
+    <DeltaFieldLength >133</DeltaFieldLength >
+    <ElevStartTORA >16</ElevStartTORA >
+    <LatDir >S</LatDir >
+    <LatDeg >33</LatDeg >
+    <LatMin >56</LatMin >
+    <LatSec>36.41</LatSec>
+    <LonDir >E</LonDir >
+    <LonDeg >151</LonDeg >
+    <LonMin >9</LonMin >
+    <LonSec >53.66</LonSec >
+    <LineUpAngle >90</LineUpAngle >
+    <ICAO >YSSY</ICAO >
+    <AirlineCode >JQ</AirlineCode >
+    <RwyId >7</RwyId >
+    <RwyMod>Std</RwyMod>
+  </Table11>
+</DocumentElement>

@@ -1,0 +1,56 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="ADMS_Master.master.vb"
+    Inherits="WNB_Admin.ADMS_Master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Airport Database Management System (ADMS)</title>
+    <link href="../ReportEngine_Sheet.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .MenuStyle1
+        {
+            text-align: center;
+            z-index: 1;
+        }
+               
+    </style>
+</head>
+<body style="margin: auto auto auto 5px;" >
+    <form id="form1" runat="server">
+    <div style="background-color: "AliceBlue">
+      <%--  <table style="width:100%">
+            <tr>
+                <td style="width: 100%" align="center" valign="top">
+                    <img id="Img1" src="../Images/ADMS_hdrbg_main.jpg" style="width: 100%; height: 100px;"
+                        alt="Title" runat="server" />
+                </td>
+            </tr>
+        </table>--%>
+       <%-- <asp:Menu ID="MnuMaiin" runat="server" Font-Names="Trebuchet MS, Arial" Orientation="Horizontal"
+            Width="150px" DisappearAfter="500" Height="14" CssClass="MenuStyle1" DynamicHoverStyle-Height="10px"
+            StaticDisplayLevels="1">
+            <StaticMenuItemStyle BackColor="AliceBlue" ForeColor="Black" ItemSpacing="10px" VerticalPadding="2px"
+                BorderColor="SteelBlue" BorderStyle="Solid" BorderWidth="1px" Width="170" Height="14" />
+            <StaticHoverStyle BackColor="DarkOrange" ForeColor="SteelBlue" BorderStyle="Solid"
+                BorderWidth="1px" />
+            <DynamicMenuStyle CssClass="MenuStyle1" />
+            <DynamicMenuItemStyle BackColor="AliceBlue" ForeColor="Black" VerticalPadding="5px"
+                BorderColor="SteelBlue" BorderStyle="Solid" BorderWidth="1px" Width="170" CssClass="MenuStyle1"
+                Height="10" />
+            <DynamicHoverStyle BackColor="AliceBlue" ForeColor="SteelBlue" BorderStyle="Solid"
+                BorderWidth="1px" />
+        </asp:Menu>--%>
+      <%--  <asp:LinkButton ID="LnkBtnLogout"  runat="server" Visible="false" Font-Names="Times New Roman"
+                                Font-Size="Small" Font-Bold="true" 
+            CausesValidation="false" >Logout</asp:LinkButton>
+                                <asp:HiddenField ID="hidFunctionId" runat="server" />--%>
+    </div>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,2296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document xmlns:xlink="http://www.w3/org/1999/xlink">
+<name>All_Ports</name>
+<LookAt>
+<longitude>144.8433</longitude>
+<latitude>-37.6733</latitude>
+<range>538663.00000000000000000</range>
+<tilt>0.00000000000000000</tilt>
+<heading>0.00000000000000000</heading>
+</LookAt>
+
+  <Style id="Port-MN">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href>
+        </Icon>
+        <color>fe00ff00</color>
+      </IconStyle>
+      <BalloonStyle>
+        <color>fff3d5bd</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+    </Style>
+
+  <Style id="Port-AL">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href>
+        </Icon>
+        <color>fe00feff</color>
+      </IconStyle>
+      <BalloonStyle>
+        <color>fff3d5bd</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+    </Style>
+
+  <Style id="Port-AD">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href>
+        </Icon>
+        <color>fff3d5bd</color>
+      </IconStyle>
+      <BalloonStyle>
+        <color>fff3d5bd</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+    </Style>
+
+  <Style id="Port-EM">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href>
+        </Icon>
+        <color>fe00a9ff</color>
+      </IconStyle>
+      <BalloonStyle>
+        <color>fff3d5bd</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+    </Style>
+
+  <Style id="Port-ST">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href>
+        </Icon>
+        <color>fe0000ff</color>
+      </IconStyle>
+      <BalloonStyle>
+        <color>fff3d5bd</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+    </Style>
+
+
+    <Style id="ARP">
+      <IconStyle>
+        <Icon>
+          <href>root://icons/palette-4.png</href>
+          <x>160</x>
+          <w>32</w>
+          <h>32</h>
+        </Icon>
+      </IconStyle>
+      <BalloonStyle>
+        <color>fff3d5bd</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+    </Style>
+    
+    <Style id="Intersection">
+      <IconStyle>
+        <color>ff00ffff</color>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+          <x>160</x>
+          <w>32</w>
+          <h>32</h>
+        </Icon>
+      </IconStyle>
+      <BalloonStyle>
+        <color>ffd3ffff</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+    </Style>
+
+    <Style id="RwyEnd">
+      <IconStyle>
+        <color>ff0000ff</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/placemark_square.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <color>ffd7c6fa</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+      <ListStyle>
+      </ListStyle>
+    </Style>
+
+    <Style id="RunwayRed">
+      <LineStyle>
+        <color>770000ff</color>
+        <width>15</width>
+      </LineStyle>
+    </Style>
+    
+    <Style id="RunwayOrange">
+      <LineStyle>
+        <color>fe00a9ff</color>
+        <width>15</width>
+      </LineStyle>
+    </Style>
+
+   <Style id="DispThr">
+      <IconStyle>
+        <color>ff4ab84e</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <color>ff9dd0a7</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+      <ListStyle>
+      </ListStyle>
+    </Style>
+
+	<Style id="ObstacleSquare">
+      <IconStyle>
+        <color>ff0000ff</color>
+        <scale>1.2</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/placemark_square.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <color>ffd7c6fa</color>
+        <text>$[description]</text>
+      </BalloonStyle>
+      <ListStyle>
+      </ListStyle>
+    </Style>
+
+    <Style id="EOP">
+      <IconStyle>
+        <color>ff00ffff</color>
+        <scale>1.0</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/info.png</href>
+          <x>160</x>
+          <w>64</w>
+          <h>64</h>
+        </Icon>
+      </IconStyle>
+      <BalloonStyle>
+        <color>ffc0dcc0</color>
+        <text>
+          <![CDATA[
+      <font face="Courier">$[description]</font>
+      ]]>
+        </text>
+      </BalloonStyle>
+    </Style>
+
+    <Style id="CL">
+      <LineStyle>
+        <color>77ff00ff</color>
+        <width>2</width>
+      </LineStyle>
+    </Style>
+
+    <Style id="TakeOffSplay">
+      <LineStyle>
+        <color>ff00ffff</color>
+        <width>2</width>
+      </LineStyle>
+    </Style><Placemark>
+<name>AGGH</name>
+<description>HIR
+Honiara International
+Honiara
+Solomon Islands
+Elevation: 30 ft
+Adequate Airport</description>
+<styleUrl>#Port-AD</styleUrl>
+<Point>
+<coordinates> 160.0517,-9.421656</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>AYPY</name>
+<description>POM
+Port Moresby Jacksons Intl
+Port Moresby
+Papua New Guinea
+Elevation: 126 ft
+Adequate Airport</description>
+<styleUrl>#Port-AD</styleUrl>
+<Point>
+<coordinates> 147.2158,-9.443886</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>EDHI</name>
+<description>XFW
+Hamburg Finkenwerder
+Hamburg (Finken-)
+Germany
+Elevation: 21 ft
+Ferry Airport</description>
+<styleUrl>#Port-FY</styleUrl>
+<Point>
+<coordinates> 9.832292,53.5338</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>HECA</name>
+<description>CAI
+Cairo Intl
+Cairo
+Egypt
+Elevation: 467 ft
+Ferry Airport</description>
+<styleUrl>#Port-FY</styleUrl>
+<Point>
+<coordinates> 31.41388,30.11138</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>LFBO</name>
+<description>TLS
+Blagnac
+Toulouse
+France
+Elevation: 499 ft
+Ferry Airport</description>
+<styleUrl>#Port-FY</styleUrl>
+<Point>
+<coordinates> 1.367778,43.635</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NCRG</name>
+<description>RAR
+Rarotonga Intl
+Rarotonga
+Cook Islands
+Elevation: 19 ft
+Adequate Airport</description>
+<styleUrl>#Port-AD</styleUrl>
+<Point>
+<coordinates> -159.795,-21.20082</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NFFN</name>
+<description>NAN
+Nadi Intl
+Nadi
+Fiji
+Elevation: 59 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 177.4436,-17.7564</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NFTF</name>
+<description>TBU
+Fua Amotu Intl
+Nuku Alofa
+Tonga
+Elevation: 126 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> -175.1404,-21.24185</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NSFA</name>
+<description>APW
+Faleolo Intl
+Apia
+Samoa
+Elevation: 58 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> -171.9972,-13.82966</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NSTU</name>
+<description>PPG
+Pago Pago Intl
+Pago Pago
+American Samoa
+Elevation: 32 ft
+Study Airport</description>
+<styleUrl>#Port-ST</styleUrl>
+<Point>
+<coordinates> -170.7115,-14.33166</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NVVV</name>
+<description>VLI
+Port Vila Bauerfield
+Port Vila
+Vanuatu
+Elevation: 70 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 168.3198,-17.69932</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NWWW</name>
+<description>NOU
+La Tontouta
+Noumea
+New Caledonia
+Elevation: 52 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 166.2161,-22.01639</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NZAA</name>
+<description>AKL
+Auckland Intl
+Auckland
+New Zealand
+Elevation: 23 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 174.7917,-37.00805</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NZCH</name>
+<description>CHC
+Christchurch Intl
+Christchurch
+New Zealand
+Elevation: 123 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 172.5345,-43.48944</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NZDN</name>
+<description>DUD
+Dunedin
+Dunedin
+New Zealand
+Elevation: 4 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 170.1983,-45.92807</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NZHN</name>
+<description>HLZ
+Hamilton
+Hamilton
+New Zealand
+Elevation: 172 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 175.3353,-37.8664</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NZNV</name>
+<description>IVC
+Invercargill
+Invercargill
+New Zealand
+Elevation: 5 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 168.32,-46.415</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NZOH</name>
+<description>OHA
+Ohakea
+Ohakea
+New Zealand
+Elevation: 164 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 175.3869,-40.20666</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NZPM</name>
+<description>PMR
+Palmerston North
+Palmerston North
+New Zealand
+Elevation: 151 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 175.6169,-40.32055</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NZQN</name>
+<description>ZQN
+Queenstown Intl
+Queenstown
+New Zealand
+Elevation: 1171 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 168.7392,-45.02111</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>NZWN</name>
+<description>WLG
+Wellington Intl
+Wellington
+New Zealand
+Elevation: 42 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 174.8053,-41.32722</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>OBBI</name>
+<description>BAH
+Bahrain Intl
+Bahrain
+Bahrain
+Elevation: 6 ft
+Ferry Airport</description>
+<styleUrl>#Port-FY</styleUrl>
+<Point>
+<coordinates> 50.63361,26.27084</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>OMAA</name>
+<description>AUH
+Abu Dhabi Intl
+Abu Dhabi
+United Arab Emirates
+Elevation: 88 ft
+Study Airport</description>
+<styleUrl>#Port-ST</styleUrl>
+<Point>
+<coordinates> 54.6511,24.43306</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>OMAL</name>
+<description>AAN
+Al Ain International
+Al Ain
+United Arab Emirates
+Elevation: 866 ft
+Ferry Airport</description>
+<styleUrl>#Port-FY</styleUrl>
+<Point>
+<coordinates> 55.60917,24.26167</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>OMDB</name>
+<description>DXB
+Dubai Intl
+Dubai
+United Arab Emirates
+Elevation: 59 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 55.36444,25.25278</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PGSN</name>
+<description>SPN
+Francisco C Ada Saipan Intl
+Saipan
+Northern Mariana Islands
+Elevation: 215 ft
+Adequate Airport</description>
+<styleUrl>#Port-AD</styleUrl>
+<Point>
+<coordinates> 145.73,15.12026</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PGUM</name>
+<description>GUM
+Guam Intl
+Guam
+Guam
+Elevation: 298 ft
+Adequate Airport</description>
+<styleUrl>#Port-AD</styleUrl>
+<Point>
+<coordinates> 144.7971,13.48396</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PHKO</name>
+<description>KOA
+Kona Intl
+Kailua Kona
+United States
+Elevation: 47 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> -156.0456,19.73876</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PHNL</name>
+<description>HNL
+Honolulu Intl
+Honolulu
+United States
+Elevation: 13 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> -157.9203,21.31783</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PHOG</name>
+<description>OGG
+Kahului
+Kahului
+United States
+Elevation: 54 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> -156.4305,20.89865</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PHTO</name>
+<description>ITO
+Hilo Intl
+Hilo
+United States
+Elevation: 38 ft
+Study Airport</description>
+<styleUrl>#Port-ST</styleUrl>
+<Point>
+<coordinates> -155.0485,19.72027</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>PKMJ</name>
+<description>MAJ
+Marshall Islands Intl
+Majuro
+Marshall Islands
+Elevation: 6 ft
+Adequate Airport</description>
+<styleUrl>#Port-AD</styleUrl>
+<Point>
+<coordinates> 171.272,7.064981</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RCKH</name>
+<description>KHH
+Kaohsiung Intl
+Kaohsiung
+Taiwan
+Elevation: 31 ft
+Adequate Airport</description>
+<styleUrl>#Port-AD</styleUrl>
+<Point>
+<coordinates> 120.3503,22.57695</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RCSS</name>
+<description>TSA
+Sungshan
+Taipei
+Taiwan
+Elevation: 18 ft
+Study Airport</description>
+<styleUrl>#Port-ST</styleUrl>
+<Point>
+<coordinates> 121.5525,25.06973</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RCTP</name>
+<description>TPE
+Taoyuan Intl
+Taipei
+Taiwan
+Elevation: 106 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 121.2322,25.08029</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RJAA</name>
+<description>NRT
+Narita Intl
+Tokyo (Narita)
+Japan
+Elevation: 135 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 140.3856,35.76528</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RJBB</name>
+<description>KIX
+Kansai
+Osaka (Kansai)
+Japan
+Elevation: 17 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 135.2328,34.43415</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RJBE</name>
+<description>UKB
+Kobe
+Kobe
+Japan
+Elevation: 22 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 135.2239,34.63277</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RJCC</name>
+<description>CTS
+New Chitose
+Sapporo
+Japan
+Elevation: 70 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 141.6925,42.77527</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RJCH</name>
+<description>HKD
+Hakodate
+Hakodate
+Japan
+Elevation: 112 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 140.8219,41.77</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RJEC</name>
+<description>AKJ
+Asahikawa
+Asahikawa
+Japan
+Elevation: 690 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 142.4475,43.67083</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RJFF</name>
+<description>FUK
+Fukuoka
+Fukuoka
+Japan
+Elevation: 30 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 130.4517,33.58445</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RJFK</name>
+<description>KOJ
+Kagoshima
+Kagoshima
+Japan
+Elevation: 892 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 130.7195,31.80334</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RJFM</name>
+<description>KMI
+Miyazaki
+Miyazaki
+Japan
+Elevation: 19 ft
+Adequate Airport</description>
+<styleUrl>#Port-AD</styleUrl>
+<Point>
+<coordinates> 131.4486,31.87722</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RJFO</name>
+<description>OIT
+Oita
+Oita
+Japan
+Elevation: 17 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 131.7372,33.47944</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RJFR</name>
+<description>KKJ
+New Kitakyushu
+Kitakyushu
+Japan
+Elevation: 21 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 131.035,33.84555</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RJFT</name>
+<description>KMJ
+Kumamoto
+Kumamoto
+Japan
+Elevation: 632 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 130.8553,32.83721</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RJFU</name>
+<description>NGS
+Nagasaki
+Nagasaki
+Japan
+Elevation: 8 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 129.9136,32.91695</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RJGG</name>
+<description>NGO
+Chubu Centrair Intl
+Nagoya
+Japan
+Elevation: 12 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 136.8053,34.85833</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RJOM</name>
+<description>MYJ
+Matsuyama
+Matsuyama
+Japan
+Elevation: 13 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 132.6997,33.82722</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RJOO</name>
+<description>ITM
+Osaka Intl
+Osaka
+Japan
+Elevation: 39 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 135.4392,34.78445</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RJOT</name>
+<description>TAK
+Takamatsu
+Takamatsu
+Japan
+Elevation: 607 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 134.0156,34.21417</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RJSS</name>
+<description>SDJ
+Sendai
+Sendai
+Japan
+Elevation: 6 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 140.9169,38.13972</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RJTT</name>
+<description>HND
+Tokyo Intl
+Tokyo
+Japan
+Elevation: 21 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 139.7811,35.55333</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RKPC</name>
+<description>CJU
+Jeju Intl
+Cheju
+South Korea
+Elevation: 118 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 126.4928,33.51223</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RKSI</name>
+<description>ICN
+Incheon Intl
+Seoul (Incheon)
+South Korea
+Elevation: 23 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 126.4392,37.4625</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RKSS</name>
+<description>GMP
+Gimpo
+Seoul (Gimpo)
+South Korea
+Elevation: 59 ft
+Study Airport</description>
+<styleUrl>#Port-ST</styleUrl>
+<Point>
+<coordinates> 126.7975,37.55693</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RKTN</name>
+<description>TAE
+Daegu Ab
+Daegu
+South Korea
+Elevation: 120 ft
+Study Airport</description>
+<styleUrl>#Port-ST</styleUrl>
+<Point>
+<coordinates> 128.6589,35.89388</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ROAH</name>
+<description>OKA
+Naha
+Naha
+Japan
+Elevation: 11 ft
+Adequate Airport</description>
+<styleUrl>#Port-AD</styleUrl>
+<Point>
+<coordinates> 127.6458,26.19583</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RODN</name>
+<description>DNA
+Kadena Ab
+Kadena
+Japan
+Elevation: 143 ft
+Study Airport</description>
+<styleUrl>#Port-ST</styleUrl>
+<Point>
+<coordinates> 127.7676,26.35562</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ROIG</name>
+<description>ISG
+Ishigaki
+Ishigaki
+Japan
+Elevation: 102 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 124.245,24.39639</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RORS</name>
+<description>SHI
+Shimojishima
+Shimojishima
+Japan
+Elevation: 25 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 125.1447,24.82668</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RPLB</name>
+<description>SFS
+Subic Bay International
+Subic Bay
+Philippines
+Elevation: 64 ft
+Study Airport</description>
+<styleUrl>#Port-ST</styleUrl>
+<Point>
+<coordinates> 120.2714,14.79444</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RPLC</name>
+<description>CRK
+Diosdado Macapagal Int
+Angeles City
+Philippines
+Elevation: 484 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 120.5603,15.18598</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RPLL</name>
+<description>MNL
+Ninoy Aquino Intl
+Manila
+Philippines
+Elevation: 75 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 121.0137,14.50991</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RPMD</name>
+<description>DVO
+Francisco Bangoy International
+Davao
+Philippines
+Elevation: 96 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 125.6458,7.125514</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RPMZ</name>
+<description>ZAM
+Zamboanga Intl
+Zamboanga
+Philippines
+Elevation: 33 ft
+Study Airport</description>
+<styleUrl>#Port-ST</styleUrl>
+<Point>
+<coordinates> 122.0596,6.922417</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RPVM</name>
+<description>CEB
+Mactan Cebu Intl
+Lapu Lapu
+Philippines
+Elevation: 32 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 123.9794,10.30756</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VDPP</name>
+<description>PNH
+Phnom Penh Intl
+Phnom Penh
+Cambodia
+Elevation: 40 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 104.8442,11.54667</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VHHH</name>
+<description>HKG
+Hong Kong Intl
+Hong Kong
+Hong Kong
+Elevation: 28 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 113.9147,22.3089</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VMMC</name>
+<description>MFM
+Macau Intl
+Macau
+Macau
+Elevation: 20 ft
+Study Airport</description>
+<styleUrl>#Port-ST</styleUrl>
+<Point>
+<coordinates> 113.5914,22.14945</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VRMM</name>
+<description>MLE
+Ibrahim Nasir Intl
+Male
+Maldives
+Elevation: 6 ft
+Ferry Airport</description>
+<styleUrl>#Port-FY</styleUrl>
+<Point>
+<coordinates> 73.52917,4.191669</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VTBD</name>
+<description>DMK
+Don Muang Intl
+Bangkok (Don Muang)
+Thailand
+Elevation: 9 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 100.6056,13.91444</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VTBS</name>
+<description>BKK
+Suvarnabhumi Intl
+Bangkok (Suvarna-)
+Thailand
+Elevation: 5 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 100.7489,13.68583</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VTBU</name>
+<description>UTP
+U Taphao Intl
+Rayong
+Thailand
+Elevation: 59 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 101.0049,12.67962</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VTCC</name>
+<description>CNX
+Chiang Mai Intl
+Chiang Mai
+Thailand
+Elevation: 1036 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 98.96278,18.77139</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VTSB</name>
+<description>URT
+Surat Thani
+Surat Thani
+Thailand
+Elevation: 20 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 99.13904,9.136142</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VTSP</name>
+<description>HKT
+Phuket Intl
+Phuket
+Thailand
+Elevation: 82 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 98.30916,8.112503</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VTSS</name>
+<description>HDY
+Hat Yai Intl
+Songkhla
+Thailand
+Elevation: 90 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 100.395,6.932781</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VVDN</name>
+<description>DAD
+Danang Intl
+Danang
+Vietnam
+Elevation: 33 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 108.2003,16.04388</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VVNB</name>
+<description>HAN
+Noibai Intl
+Hanoi
+Vietnam
+Elevation: 40 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 105.8055,21.22166</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>VVTS</name>
+<description>SGN
+Tansonnhat Intl
+Ho Chi Minh City
+Vietnam
+Elevation: 33 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 106.6608,10.82055</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WAAA</name>
+<description>UPG
+Hasanuddin
+Makassar
+Indonesia
+Elevation: 47 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 119.5544,-5.060836</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WABB</name>
+<description>BIK
+Frans Kaisiepo
+Biak
+Indonesia
+Elevation: 46 ft
+Adequate Airport</description>
+<styleUrl>#Port-AD</styleUrl>
+<Point>
+<coordinates> 136.1099,-1.191803</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WADD</name>
+<description>DPS
+Bali Ngurah Rai
+Bali
+Indonesia
+Elevation: 14 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 115.1691,-8.747434</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WADL</name>
+<description>LOP
+Lombok International
+Lombok
+Indonesia
+Elevation: 319 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 116.2767,-8.757497</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WALL</name>
+<description>BPN
+Sepinggan
+Balikpapan
+Indonesia
+Elevation: 12 ft
+Adequate Airport</description>
+<styleUrl>#Port-AD</styleUrl>
+<Point>
+<coordinates> 116.8939,-1.267225</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WAMM</name>
+<description>MDC
+Sam Ratulangi
+Manado
+Indonesia
+Elevation: 270 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 124.925,1.545553</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WAPP</name>
+<description>AMQ
+Pattimura
+Ambon
+Indonesia
+Elevation: 33 ft
+Adequate Airport</description>
+<styleUrl>#Port-AD</styleUrl>
+<Point>
+<coordinates> 128.0897,-3.706942</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WARR</name>
+<description>SUB
+Juanda
+Surabaya
+Indonesia
+Elevation: 9 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 112.78,-7.383605</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WATT</name>
+<description>KOE
+El Tari
+Kupang
+Indonesia
+Elevation: 335 ft
+Adequate Airport</description>
+<styleUrl>#Port-AD</styleUrl>
+<Point>
+<coordinates> 123.6639,-10.17778</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WBGG</name>
+<description>KCH
+Kuching Intl
+Kuching
+Malaysia
+Elevation: 89 ft
+Adequate Airport</description>
+<styleUrl>#Port-AD</styleUrl>
+<Point>
+<coordinates> 110.3378,1.484722</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WBKK</name>
+<description>BKI
+Kota Kinabalu Intl
+Kota Kinabalu
+Malaysia
+Elevation: 15 ft
+Adequate Airport</description>
+<styleUrl>#Port-AD</styleUrl>
+<Point>
+<coordinates> 116.053,5.944719</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WBSB</name>
+<description>BWN
+Brunei Intl
+Bandar Seri Begawan
+Brunei
+Elevation: 73 ft
+Adequate Airport</description>
+<styleUrl>#Port-AD</styleUrl>
+<Point>
+<coordinates> 114.9283,4.944211</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WIDD</name>
+<description>BTH
+Hang Nadim
+Batam
+Indonesia
+Elevation: 128 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 104.1139,1.118611</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WIHH</name>
+<description>HLP
+Halim Perdanakusuma
+Jakarta (Halim)
+Indonesia
+Elevation: 84 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 106.8864,-6.267509</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WIII</name>
+<description>CGK
+Soekarno Hatta Intl
+Jakarta (Soekarno-H)
+Indonesia
+Elevation: 34 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 106.6611,-6.123611</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WIPP</name>
+<description>PLM
+Sultan Mahmud Badaruddin Ii
+Palembang
+Indonesia
+Elevation: 37 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 104.7001,-2.901228</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WMKJ</name>
+<description>JHB
+Sultan Ismail
+Johor Bahru
+Malaysia
+Elevation: 135 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 103.6703,1.640547</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WMKK</name>
+<description>KUL
+Kuala Lumpur Intl
+Kuala Lumpur (Sepa-)
+Malaysia
+Elevation: 70 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 101.6981,2.743333</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WMKL</name>
+<description>LGK
+Langkawi Intl
+Langkawi
+Malaysia
+Elevation: 29 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 99.73333,6.333339</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WMKP</name>
+<description>PEN
+Penang Intl
+Penang
+Malaysia
+Elevation: 11 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 100.2767,5.297214</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WMSA</name>
+<description>SZB
+Subang-Sultan Abdul Aziz Shah
+Kuala Lumpur (Suba-)
+Malaysia
+Elevation: 89 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 101.548,3.131103</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WSSL</name>
+<description>XSP
+Seletar
+Singapore (Seletar)
+Singapore
+Elevation: 45 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 103.8676,1.416953</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>WSSS</name>
+<description>SIN
+Changi Intl
+Singapore (Changi)
+Singapore
+Elevation: 22 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 103.9893,1.359214</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YAYE</name>
+<description>AYQ
+Ayers Rock
+Ayers Rock
+Australia
+Elevation: 1626 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 130.9756,-25.18614</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YBAS</name>
+<description>ASP
+Alice Springs
+Alice Springs
+Australia
+Elevation: 1789 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 133.9022,-23.80694</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YBBN</name>
+<description>BNE
+Brisbane Intl
+Brisbane
+Australia
+Elevation: 13 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 153.1175,-27.38417</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YBCG</name>
+<description>OOL
+Gold Coast
+Gold Coast
+Australia
+Elevation: 21 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 153.5047,-28.16444</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YBCS</name>
+<description>CNS
+Cairns Intl
+Cairns
+Australia
+Elevation: 10 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 145.7553,-16.88584</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YBHM</name>
+<description>HTI
+Hamilton Island
+Hamilton Island
+Australia
+Elevation: 15 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 148.9517,-20.35805</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YBMA</name>
+<description>ISA
+Mount Isa
+Mount Isa
+Australia
+Elevation: 1121 ft
+Adequate Airport</description>
+<styleUrl>#Port-AD</styleUrl>
+<Point>
+<coordinates> 139.4886,-20.66389</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YBMK</name>
+<description>MKY
+Mackay
+Mackay
+Australia
+Elevation: 19 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 149.1797,-21.17166</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YBNA</name>
+<description>BNK
+Ballina Byron Gateway
+Ballina Byron
+Australia
+Elevation: 7 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 153.5625,-28.8339</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YBPN</name>
+<description>PPP
+Proserpine Whitsunday Coast
+Proserpine
+Australia
+Elevation: 82 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 148.5522,-20.495</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YBRK</name>
+<description>ROK
+Rockhampton
+Rockhampton
+Australia
+Elevation: 34 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 150.4753,-23.38195</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YBRM</name>
+<description>BME
+Broome Intl
+Broome
+Australia
+Elevation: 56 ft
+Adequate Airport</description>
+<styleUrl>#Port-AD</styleUrl>
+<Point>
+<coordinates> 122.2278,-17.94973</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YBSU</name>
+<description>MCY
+Sunshine Coast
+Sunshine Coast
+Australia
+Elevation: 15 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 153.0911,-26.60333</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YBTL</name>
+<description>TSV
+Townsville
+Townsville
+Australia
+Elevation: 18 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 146.7653,-19.25251</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YCHK</name>
+<description>CKW
+Christmas Creek
+Christmas Creek
+Australia
+Elevation: 1453 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 119.6425,-22.35583</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YCIN</name>
+<description>CIN
+Curtin
+Curtin
+Australia
+Elevation: 300 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 123.8283,-17.58139</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YFDF</name>
+<description>KFE
+Cloudbreak
+Fortescue D Forrest
+Australia
+Elevation: 1565 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 119.4367,-22.29167</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YGEL</name>
+<description>GET
+Geraldton
+Geraldton
+Australia
+Elevation: 121 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 114.7075,-28.79611</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YLRE</name>
+<description>LRE
+Longreach
+Longreach
+Australia
+Elevation: 627 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 144.2803,-23.43416</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YMAV</name>
+<description>AVV
+Avalon
+Avalon
+Australia
+Elevation: 35 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 144.4694,-38.03945</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YMEK</name>
+<description>MKR
+Meekatharra
+Meekatharra
+Australia
+Elevation: 1713 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 118.5478,-26.61168</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YMHB</name>
+<description>HBA
+Hobart
+Hobart
+Australia
+Elevation: 13 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 147.5103,-42.8361</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YMLT</name>
+<description>LST
+Launceston
+Launceston
+Australia
+Elevation: 562 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 147.2142,-41.54527</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YMML</name>
+<description>MEL
+Melbourne Intl
+Melbourne
+Australia
+Elevation: 434 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 144.8433,-37.67334</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YNWN</name>
+<description>NZE
+Newman
+Newman
+Australia
+Elevation: 1724 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 119.8028,-23.41778</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YPAD</name>
+<description>ADL
+Adelaide Intl
+Adelaide
+Australia
+Elevation: 20 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 138.5306,-34.945</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YPDN</name>
+<description>DRW
+Darwin Intl
+Darwin
+Australia
+Elevation: 103 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 130.8767,-12.41472</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YPKA</name>
+<description>KTA
+Karratha
+Karratha
+Australia
+Elevation: 32 ft
+Study Airport</description>
+<styleUrl>#Port-ST</styleUrl>
+<Point>
+<coordinates> 116.7733,-20.71223</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YPKG</name>
+<description>KGI
+Kalgoorlie Boulder
+Kalgoorlie
+Australia
+Elevation: 1203 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 121.4617,-30.78944</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YPLM</name>
+<description>LEA
+Learmonth
+Learmonth
+Australia
+Elevation: 19 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 114.0886,-22.23556</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YPPD</name>
+<description>PHE
+Port Hedland Intl
+Port Hedland
+Australia
+Elevation: 33 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 118.6264,-20.37777</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YPPH</name>
+<description>PER
+Perth Intl
+Perth
+Australia
+Elevation: 67 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 115.9669,-31.94028</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YPTN</name>
+<description>KTR
+Tindal
+Tindal
+Australia
+Elevation: 443 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 132.3778,-14.52111</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YPXM</name>
+<description>XCH
+Christmas Island
+Christmas Island
+Christmas Island
+Elevation: 916 ft
+Adequate Airport</description>
+<styleUrl>#Port-AD</styleUrl>
+<Point>
+<coordinates> 105.6903,-10.45055</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YSCB</name>
+<description>CBR
+Canberra
+Canberra
+Australia
+Elevation: 1886 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 149.195,-35.30682</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YSNF</name>
+<description>NLK
+Norfolk Island Intl
+Norfolk Island
+Norfolk Island
+Elevation: 371 ft
+Adequate Airport</description>
+<styleUrl>#Port-AD</styleUrl>
+<Point>
+<coordinates> 167.9381,-29.04251</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YSOL</name>
+<description>SLJ
+Solomon
+Solomon
+Australia
+Elevation: 2008 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 117.85,-22.255</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YSSY</name>
+<description>SYD
+Sydney Intl
+Sydney
+Australia
+Elevation: 21 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 151.1772,-33.9461</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YSTW</name>
+<description>TMW
+Tamworth
+Tamworth
+Australia
+Elevation: 1334 ft
+Adequate Airport</description>
+<styleUrl>#Port-AD</styleUrl>
+<Point>
+<coordinates> 150.8467,-31.08388</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>YWLM</name>
+<description>NTL
+Newcastle
+Williamtown
+Australia
+Elevation: 31 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 151.8345,-32.79494</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ZBAA</name>
+<description>PEK
+Capital Intl
+Beijing
+China
+Elevation: 115 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 116.5983,40.07334</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ZBSJ</name>
+<description>SJW
+Shijiazhuang Daguocun Int
+Shijiazhuang
+China
+Elevation: 233 ft
+Study Airport</description>
+<styleUrl>#Port-ST</styleUrl>
+<Point>
+<coordinates> 114.6983,38.28167</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ZBTJ</name>
+<description>TSN
+Binhai
+Tianjin
+China
+Elevation: 13 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 117.345,39.12332</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ZBYN</name>
+<description>TYN
+Wusu
+Taiyuan
+China
+Elevation: 2579 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 112.63,37.74834</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ZGGG</name>
+<description>CAN
+Baiyun Intl
+Guangzhou
+China
+Elevation: 50 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 113.3083,23.39</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ZGHA</name>
+<description>HHA
+Huanghua
+Changsha
+China
+Elevation: 220 ft
+Adequate Airport</description>
+<styleUrl>#Port-AD</styleUrl>
+<Point>
+<coordinates> 113.2183,28.18999</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ZGSZ</name>
+<description>SZX
+Baoan Intl
+Shenzhen
+China
+Elevation: 14 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 113.8117,22.63834</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ZHCC</name>
+<description>CGO
+Xinzheng
+Zhengzhou
+China
+Elevation: 495 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 113.84,34.51834</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ZHHH</name>
+<description>WUH
+WUHAN
+Tianhe
+China
+Elevation: 112 ft
+Study Airport</description>
+<styleUrl>#Port-ST</styleUrl>
+<Point>
+<coordinates> 114.21,30.785</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ZJHK</name>
+<description>HAK
+Meilan
+Haikou
+China
+Elevation: 75 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 110.46,19.93334</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ZSAM</name>
+<description>XMN
+Gaoqi
+Xiamen
+China
+Elevation: 59 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 118.1267,24.545</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ZSHC</name>
+<description>HGH
+Xiaoshan
+Hangzhou
+China
+Elevation: 23 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 120.4333,30.22832</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ZSNB</name>
+<description>NGB
+Lishe
+Ningbo
+China
+Elevation: 13 ft
+Study Airport</description>
+<styleUrl>#Port-ST</styleUrl>
+<Point>
+<coordinates> 121.4633,29.82666</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ZSNJ</name>
+<description>NKG
+Lukou
+Nanjing
+China
+Elevation: 49 ft
+Main Airport</description>
+<styleUrl>#Port-MN</styleUrl>
+<Point>
+<coordinates> 118.8633,31.74334</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>ZSPD</name>
+<description>PVG
+Pudong
+Shanghai (Pudong)
+China
+Elevation: 13 ft
+Alternate Airport</description>
+<styleUrl>#Port-AL</styleUrl>
+<Point>
+<coordinates> 121.7933,31.14499</coordinates>
+</Point>
+</Placemark>
+</Document>
+</kml>
+

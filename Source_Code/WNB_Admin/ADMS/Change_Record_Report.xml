@@ -1,0 +1,55 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <TblChangeRecordReport>
+    <ModuleId>A</ModuleId>
+    <ICAO>YMML</ICAO>    
+    <IATA>MEL</IATA>
+    <AirportCategory>GK</AirportCategory>
+    <AirportName>Airport Name</AirportName>
+    <RwyId>77</RwyId>
+    <RwyMod>111</RwyMod>
+    <Obstacle_Id>2</Obstacle_Id>
+    <Obs_Distance>1</Obs_Distance>
+    <Intersection_Id>2</Intersection_Id>
+    <Inter_Ident>1</Inter_Ident>    
+  </TblChangeRecordReport>
+  <TblChangeRecordReport>
+    <ModuleId>A</ModuleId>
+    <ICAO>YMML</ICAO>
+    <IATA>MEL</IATA>
+    <AirportCategory>GK</AirportCategory>
+    <AirportName>Airport Name</AirportName>
+    <RwyId>77</RwyId>
+    <RwyMod>111</RwyMod>
+    <Obstacle_Id>2</Obstacle_Id>
+    <Obs_Distance>1</Obs_Distance>
+    <Intersection_Id>2</Intersection_Id>
+    <Inter_Ident>1</Inter_Ident>
+  </TblChangeRecordReport>
+  <TblChangeRecordReport>
+    <ModuleId>A</ModuleId>
+    <ICAO>YMML</ICAO>
+    <IATA>MEL</IATA>
+    <AirportCategory>GK</AirportCategory>
+    <AirportName>Airport Name</AirportName>
+    <RwyId>7</RwyId>
+    <RwyMod>11</RwyMod>
+    <Obstacle_Id>22</Obstacle_Id>
+    <Obs_Distance>12</Obs_Distance>
+    <Intersection_Id>22</Intersection_Id>
+    <Inter_Ident>12</Inter_Ident>
+  </TblChangeRecordReport>
+  <TblChangeRecordReport>
+    <ModuleId>A</ModuleId>
+    <ICAO>YMML</ICAO>
+    <IATA>MEL</IATA>
+    <AirportCategory>GK</AirportCategory>
+    <AirportName>Airport Name</AirportName>
+    <RwyId>771</RwyId>
+    <RwyMod>1111</RwyMod>
+    <Obstacle_Id>12</Obstacle_Id>
+    <Obs_Distance>11</Obs_Distance>
+    <Intersection_Id>12</Intersection_Id>
+    <Inter_Ident>11</Inter_Ident>
+  </TblChangeRecordReport>
+</DocumentElement>

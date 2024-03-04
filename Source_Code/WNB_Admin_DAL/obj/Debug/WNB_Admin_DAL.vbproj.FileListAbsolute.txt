@@ -1,0 +1,15 @@
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_DAL\bin\Debug\WNB_Admin_DAL.dll
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_DAL\bin\Debug\WNB_Admin_DAL.pdb
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_DAL\bin\Debug\WNB_Admin_DAL.xml
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_DAL\bin\Debug\WNB_Common.dll
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_DAL\bin\Debug\WNB_Common.pdb
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_DAL\bin\Debug\WNB_Common.xml
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_DAL\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_DAL\obj\Debug\WNB_Admin_DAL.Resources.resources
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_DAL\obj\Debug\WNB_Admin_DAL.vbproj.GenerateResource.Cache
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_DAL\obj\Debug\WNB_Admin_DAL.dll
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_DAL\obj\Debug\WNB_Admin_DAL.xml
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_DAL\obj\Debug\WNB_Admin_DAL.pdb
+C:\Users\bswami\OneDrive - Jetstar Airways Pty Ltd\Desktop\ADMS\adms\Source_Code\WNB_Admin_DAL\bin\Debug\SQLite.NET.dll

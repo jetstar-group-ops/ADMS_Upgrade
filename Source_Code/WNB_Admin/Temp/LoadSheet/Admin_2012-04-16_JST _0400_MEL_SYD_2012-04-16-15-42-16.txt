@@ -1,0 +1,129 @@
+FLIGHT	
+Aircraft id	A320
+Registration	VH-VFD
+Aircraft Config id	all
+Flt Nbr	JST 0400
+From	MEL
+To	SYD
+Service id	idDOM
+Revision	12-02-test16
+Printed at 	15:42:16 2012-04-16
+UDID	e1a06366adf6e4786b63059166feddaa84c2f3a8
+
+AIRCRAFT	
+LDS version nbr	8
+Description	
+Weight	
+IU	
+Description	
+Weight	
+IU	
+Description	
+Weight	
+IU	
+
+FUEL	
+Density	0.785
+Maximum Fuel	18730
+Limited By	Tank Capacity
+Distribution	Standard
+Taxi Fuel	120
+Fuel Uplift	10000
+Flight Fuel	8000
+
+CABIN	
+FD	2
+CB	4
+Galley config id	Standard
+Subfleet id	170Y
+Zone A (1-9) M 0
+Zone A (1-9) F 0
+Zone A (1-9) C 0
+Zone A (1-9) TTL 0
+Zone A (1-9) I 0
+Zone B (10-19) M 0
+Zone B (10-19) F 0
+Zone B (10-19) C 0
+Zone B (10-19) TTL 0
+Zone B (10-19) I 0
+Zone C (20-30) M 0
+Zone C (20-30) F 0
+Zone C (20-30) C 0
+Zone C (20-30) TTL 0
+Zone C (20-30) I 0
+Total	M 0
+Total	F 0
+Total	C 0
+Total	0
+Total I	0
+Total POB	6
+
+UNDERFLOOR	
+TTL Bags	0
+TTL Cargo	0
+POS 11 bags	0
+POS 11 cargo	0
+POS 11 ULD	Nil Fit
+POS 11 TTL	0
+POS 12 bags	0
+POS 12 cargo	0
+POS 12 ULD	Nil Fit
+POS 12 TTL	0
+POS 13 bags	0
+POS 13 cargo	0
+POS 13 ULD	Nil Fit
+POS 13 TTL	0
+POS 31 bags	0
+POS 31 cargo	0
+POS 31 ULD	Nil Fit
+POS 31 TTL	0
+POS 32 bags	0
+POS 32 cargo	0
+POS 32 ULD	Nil Fit
+POS 32 TTL	0
+POS 41 bags	0
+POS 41 cargo	0
+POS 41 ULD	Nil Fit
+POS 41 TTL	0
+POS 42 bags	0
+POS 42 cargo	0
+POS 42 ULD	Nil Fit
+POS 42 TTL	0
+POS 5 bags	0
+POS 5 cargo	0
+POS 5 ULD	Bulk
+POS 5 TTL	0
+
+LOADSHEET	
+Actual Basic Weight	41798
+Actual Operating Weight	43008
+%MAC Operating Weight	28.2
+Actual Payload Weight	0
+Actual Zero Fuel Weight	43008
+MAX Zero Fuel Weight	59500
+%MAC Zero Fuel Weight	28.2
+Actual Fuel Uplift	10000
+Actual Taxi Weight	53008
+Max Taxi Weight	74000
+Actual Taxi Fuel	120
+Actual Takeoff Weight	52888
+MAX Takeoff Weight	70000
+%MAC Takeoff Weight	26.2
+Actual Flight Fuel Weight	8000
+Actual Landing Weight	44888
+MAX Landing Weight	63000
+%MAC Landing Weight	29.6
+T.O. THS	0.5 UP
+
+LAST MINUTE CHANGE	
+Persons Onboard before LMCs	6
+Underload	16492
+Limited by	Zero Fuel Weight
+Allowable LMCs	5
+Actual LMCs	0
+Total Persons Onboard	6
+
+COMPLIANCE STATEMENT	
+Edition Number	1
+Pilot in Command	Paul N  
+Staff Number	106917

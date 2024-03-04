@@ -1,0 +1,886 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{60BBEC55-3BD7-4755-B396-4366167DF069}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WNB_Admin</RootNamespace>
+    <AssemblyName>WNB_Admin</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WNB_Admin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WNB_Admin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.30512.20315, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Business Objects\Common\2.8\managed\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Business Objects\Common\2.8\managed\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Business Objects\Common\2.8\managed\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.VSDesigner, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Business Objects\Common\2.8\managed\CrystalDecisions.VSDesigner.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Web, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Business Objects\Common\2.8\managed\CrystalDecisions.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Business Objects\Common\2.8\managed\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.ObjectBuilder2, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="microsoft.stdformat, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="SQLite.NET, Version=0.21.1869.3794, Culture=neutral, PublicKeyToken=c273bd375e695f9c" />
+    <Reference Include="System" />
+    <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\APNPushRequest.aspx.designer.vb">
+      <DependentUpon>APNPushRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\APNPushRequest.aspx.vb">
+      <DependentUpon>APNPushRequest.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DBValidation.aspx.designer.vb">
+      <DependentUpon>DBValidation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DBValidation.aspx.vb">
+      <DependentUpon>DBValidation.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RoleManagement.aspx.designer.vb">
+      <DependentUpon>RoleManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RoleManagement.aspx.vb">
+      <DependentUpon>RoleManagement.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserManagement.aspx.designer.vb">
+      <DependentUpon>UserManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserManagement.aspx.vb">
+      <DependentUpon>UserManagement.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ADMS\ADMS_AirportDM.aspx.designer.vb">
+      <DependentUpon>ADMS_AirportDM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMS\ADMS_AirportDM.aspx.vb">
+      <DependentUpon>ADMS_AirportDM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMS\ADMS_Airport_Max.aspx.designer.vb">
+      <DependentUpon>ADMS_Airport_Max.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMS\ADMS_Airport_Max.aspx.vb">
+      <DependentUpon>ADMS_Airport_Max.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMS\ADMS_APTCategory.aspx.designer.vb">
+      <DependentUpon>ADMS_APTCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMS\ADMS_APTCategory.aspx.vb">
+      <DependentUpon>ADMS_APTCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMS\ADMS_AptMaxExp.aspx.designer.vb">
+      <DependentUpon>ADMS_AptMaxExp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMS\ADMS_AptMaxExp.aspx.vb">
+      <DependentUpon>ADMS_AptMaxExp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMS\ADMS_CRR.aspx.designer.vb">
+      <DependentUpon>ADMS_CRR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMS\ADMS_CRR.aspx.vb">
+      <DependentUpon>ADMS_CRR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMS\ADMS_DatabaseExp.aspx.designer.vb">
+      <DependentUpon>ADMS_DatabaseExp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMS\ADMS_DatabaseExp.aspx.vb">
+      <DependentUpon>ADMS_DatabaseExp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMS\ADMS_DataCheckErrorFileDownload.aspx.designer.vb">
+      <DependentUpon>ADMS_DataCheckErrorFileDownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMS\ADMS_DataCheckErrorFileDownload.aspx.vb">
+      <DependentUpon>ADMS_DataCheckErrorFileDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMS\ADMS_DataCheckInactiveFileDownload.aspx.designer.vb">
+      <DependentUpon>ADMS_DataCheckInactiveFileDownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMS\ADMS_DataCheckInactiveFileDownload.aspx.vb">
+      <DependentUpon>ADMS_DataCheckInactiveFileDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMS\ADMS_DataCheckReport.aspx.designer.vb">
+      <DependentUpon>ADMS_DataCheckReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMS\ADMS_DataCheckReport.aspx.vb">
+      <DependentUpon>ADMS_DataCheckReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMS\ADMS_Export_Airport_Manager.aspx.designer.vb">
+      <DependentUpon>ADMS_Export_Airport_Manager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMS\ADMS_Export_Airport_Manager.aspx.vb">
+      <DependentUpon>ADMS_Export_Airport_Manager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMS\ADMS_Export_Data_For_Boeing_OPT.aspx.designer.vb">
+      <DependentUpon>ADMS_Export_Data_For_Boeing_OPT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMS\ADMS_Export_Data_For_Boeing_OPT.aspx.vb">
+      <DependentUpon>ADMS_Export_Data_For_Boeing_OPT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMS\ADMS_Home.aspx.designer.vb">
+      <DependentUpon>ADMS_Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMS\ADMS_Home.aspx.vb">
+      <DependentUpon>ADMS_Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMS\ADMS_IntersectionDM.aspx.designer.vb">
+      <DependentUpon>ADMS_IntersectionDM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMS\ADMS_IntersectionDM.aspx.vb">
+      <DependentUpon>ADMS_IntersectionDM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMS\ADMS_Master.Master.designer.vb">
+      <DependentUpon>ADMS_Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ADMS\ADMS_Master.Master.vb">
+      <DependentUpon>ADMS_Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMS\ADMS_ObstacleDM.aspx.designer.vb">
+      <DependentUpon>ADMS_ObstacleDM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMS\ADMS_ObstacleDM.aspx.vb">
+      <DependentUpon>ADMS_ObstacleDM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMS\ADMS_ObstacleGraph.aspx.designer.vb">
+      <DependentUpon>ADMS_ObstacleGraph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMS\ADMS_ObstacleGraph.aspx.vb">
+      <DependentUpon>ADMS_ObstacleGraph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMS\ADMS_ParameterValues.aspx.designer.vb">
+      <DependentUpon>ADMS_ParameterValues.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMS\ADMS_ParameterValues.aspx.vb">
+      <DependentUpon>ADMS_ParameterValues.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMS\ADMS_RunwayDM.aspx.designer.vb">
+      <DependentUpon>ADMS_RunwayDM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMS\ADMS_RunwayDM.aspx.vb">
+      <DependentUpon>ADMS_RunwayDM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMS\ADMS_TextReportPrint.aspx.designer.vb">
+      <DependentUpon>ADMS_TextReportPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMS\ADMS_TextReportPrint.aspx.vb">
+      <DependentUpon>ADMS_TextReportPrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMS\AirportManagerFileDownload.aspx.designer.vb">
+      <DependentUpon>AirportManagerFileDownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMS\AirportManagerFileDownload.aspx.vb">
+      <DependentUpon>AirportManagerFileDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMS\CRReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ADMS\CrystalReport2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ADMS\MyIntersectionTxtPrintSUBreport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyIntersectionTxtPrintSUBreport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ADMS\MyObstacleTxtPrintSUBreport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyObstacleTxtPrintSUBreport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ADMS\TextfilePrintReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TextfilePrintReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ADMS\TextFileReport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnalyticalRpt\AnalyticalReport.aspx.designer.vb">
+      <DependentUpon>AnalyticalReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AnalyticalRpt\AnalyticalReport.aspx.vb">
+      <DependentUpon>AnalyticalReport.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AnalyticalRpt\Analytical_IPadDBVerHistory.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Analytical_IPadDBVerHistory.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnalyticalRpt\CrystalReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnalyticalRpt\EnableDisableIPAD.aspx.designer.vb">
+      <DependentUpon>EnableDisableIPAD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AnalyticalRpt\EnableDisableIPAD.aspx.vb">
+      <DependentUpon>EnableDisableIPAD.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AnalyticalRpt\MoveDataToProd.aspx.designer.vb">
+      <DependentUpon>MoveDataToProd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AnalyticalRpt\MoveDataToProd.aspx.vb">
+      <DependentUpon>MoveDataToProd.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AnalyticalRpt\ViewLoadSheet.aspx.designer.vb">
+      <DependentUpon>ViewLoadSheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AnalyticalRpt\ViewLoadSheet.aspx.vb">
+      <DependentUpon>ViewLoadSheet.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ChangePwd.aspx.designer.vb">
+      <DependentUpon>ChangePwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePwd.aspx.vb">
+      <DependentUpon>ChangePwd.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Database\Aircraft.aspx.designer.vb">
+      <DependentUpon>Aircraft.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Aircraft.aspx.vb">
+      <DependentUpon>Aircraft.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Database\AircraftConfig.aspx.designer.vb">
+      <DependentUpon>AircraftConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\AircraftConfig.aspx.vb">
+      <DependentUpon>AircraftConfig.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Database\AircraftConfigAdjustments.aspx.designer.vb">
+      <DependentUpon>AircraftConfigAdjustments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\AircraftConfigAdjustments.aspx.vb">
+      <DependentUpon>AircraftConfigAdjustments.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Database\AircraftDetail.aspx.designer.vb">
+      <DependentUpon>AircraftDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\AircraftDetail.aspx.vb">
+      <DependentUpon>AircraftDetail.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Database\Choice.aspx.designer.vb">
+      <DependentUpon>Choice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Choice.aspx.vb">
+      <DependentUpon>Choice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Database\ChoiceAdd.aspx.designer.vb">
+      <DependentUpon>ChoiceAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ChoiceAdd.aspx.vb">
+      <DependentUpon>ChoiceAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Database\ChoiceList.aspx.designer.vb">
+      <DependentUpon>ChoiceList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ChoiceList.aspx.vb">
+      <DependentUpon>ChoiceList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Database\ChoiceListAdd.aspx.designer.vb">
+      <DependentUpon>ChoiceListAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ChoiceListAdd.aspx.vb">
+      <DependentUpon>ChoiceListAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Database\CrewConfiguration.aspx.designer.vb">
+      <DependentUpon>CrewConfiguration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\CrewConfiguration.aspx.vb">
+      <DependentUpon>CrewConfiguration.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Database\CrewWeightsnArms.aspx.designer.vb">
+      <DependentUpon>CrewWeightsnArms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\CrewWeightsnArms.aspx.vb">
+      <DependentUpon>CrewWeightsnArms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Database\FuelData.aspx.designer.vb">
+      <DependentUpon>FuelData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\FuelData.aspx.vb">
+      <DependentUpon>FuelData.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Database\GalleyArms.aspx.designer.vb">
+      <DependentUpon>GalleyArms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\GalleyArms.aspx.vb">
+      <DependentUpon>GalleyArms.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Database\GalleyWeights.aspx.designer.vb">
+      <DependentUpon>GalleyWeights.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\GalleyWeights.aspx.vb">
+      <DependentUpon>GalleyWeights.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Database\IpadDbVHry.aspx.designer.vb">
+      <DependentUpon>IpadDbVHry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\IpadDbVHry.aspx.vb">
+      <DependentUpon>IpadDbVHry.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Database\ItemTemplate.vb" />
+    <Compile Include="Database\OperationalLimit.aspx.designer.vb">
+      <DependentUpon>OperationalLimit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\OperationalLimit.aspx.vb">
+      <DependentUpon>OperationalLimit.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Database\OperationalLimitEdit.aspx.designer.vb">
+      <DependentUpon>OperationalLimitEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\OperationalLimitEdit.aspx.vb">
+      <DependentUpon>OperationalLimitEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Database\Registration.aspx.designer.vb">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Registration.aspx.vb">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Database\RegistrationDetail.aspx.designer.vb">
+      <DependentUpon>RegistrationDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\RegistrationDetail.aspx.vb">
+      <DependentUpon>RegistrationDetail.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Database\ServiceData.aspx.designer.vb">
+      <DependentUpon>ServiceData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ServiceData.aspx.vb">
+      <DependentUpon>ServiceData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Database\ServiceDefinitionEdit.aspx.designer.vb">
+      <DependentUpon>ServiceDefinitionEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ServiceDefinitionEdit.aspx.vb">
+      <DependentUpon>ServiceDefinitionEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Database\ServiceDefinitions.aspx.designer.vb">
+      <DependentUpon>ServiceDefinitions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ServiceDefinitions.aspx.vb">
+      <DependentUpon>ServiceDefinitions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Database\Subfleet.aspx.designer.vb">
+      <DependentUpon>Subfleet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Subfleet.aspx.vb">
+      <DependentUpon>Subfleet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Database\SubfleetDetails.aspx.designer.vb">
+      <DependentUpon>SubfleetDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\SubfleetDetails.aspx.vb">
+      <DependentUpon>SubfleetDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Database\ULDConfigurationEdit.aspx.designer.vb">
+      <DependentUpon>ULDConfigurationEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ULDConfigurationEdit.aspx.vb">
+      <DependentUpon>ULDConfigurationEdit.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Database\ULDDefinitions.aspx.designer.vb">
+      <DependentUpon>ULDDefinitions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ULDDefinitions.aspx.vb">
+      <DependentUpon>ULDDefinitions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Database\UlDPositionEdit.aspx.designer.vb">
+      <DependentUpon>UlDPositionEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\UlDPositionEdit.aspx.vb">
+      <DependentUpon>UlDPositionEdit.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Database\Underfloor.aspx.designer.vb">
+      <DependentUpon>Underfloor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Underfloor.aspx.vb">
+      <DependentUpon>Underfloor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Database\UnderFloorCompartment.aspx.designer.vb">
+      <DependentUpon>UnderFloorCompartment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\UnderFloorCompartment.aspx.vb">
+      <DependentUpon>UnderFloorCompartment.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Database\UnderFloorConfiguration.aspx.designer.vb">
+      <DependentUpon>UnderFloorConfiguration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\UnderFloorConfiguration.aspx.vb">
+      <DependentUpon>UnderFloorConfiguration.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Database\UnderFloorPostionDetail.aspx.designer.vb">
+      <DependentUpon>UnderFloorPostionDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\UnderFloorPostionDetail.aspx.vb">
+      <DependentUpon>UnderFloorPostionDetail.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Database\ZoneDefinition.aspx.designer.vb">
+      <DependentUpon>ZoneDefinition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ZoneDefinition.aspx.vb">
+      <DependentUpon>ZoneDefinition.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.vb">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.vb">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.vb">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.vb">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SubMenu.ascx.designer.vb">
+      <DependentUpon>SubMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SubMenu.ascx.vb">
+      <DependentUpon>SubMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ADMS\CRReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMS\CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMS\MyIntersectionTxtPrintSUBreport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MyIntersectionTxtPrintSUBreport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMS\MyObstacleTxtPrintSUBreport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MyObstacleTxtPrintSUBreport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMS\TextfilePrintReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TextfilePrintReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnalyticalRpt\Analytical_IPadDBVerHistory.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Analytical_IPadDBVerHistory.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnalyticalRpt\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage.Master" />
+    <Content Include="ADMS\ADMS_Master.Master" />
+    <Content Include="App_Browsers\bwMultiSupport.browser" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\APNPushRequest.aspx" />
+    <Content Include="Admin\DBValidation.aspx" />
+    <Content Include="Admin\RoleManagement.aspx" />
+    <Content Include="Admin\UserManagement.aspx" />
+    <Content Include="ADMS\ADMS_AirportDM.aspx" />
+    <Content Include="ADMS\ADMS_Airport_Max.aspx" />
+    <Content Include="ADMS\ADMS_APTCategory.aspx" />
+    <Content Include="ADMS\ADMS_AptMaxExp.aspx" />
+    <Content Include="ADMS\ADMS_CRR.aspx" />
+    <Content Include="ADMS\ADMS_DatabaseExp.aspx" />
+    <Content Include="ADMS\ADMS_DataCheckErrorFileDownload.aspx" />
+    <Content Include="ADMS\ADMS_DataCheckInactiveFileDownload.aspx" />
+    <Content Include="ADMS\ADMS_DataCheckReport.aspx" />
+    <Content Include="ADMS\ADMS_Export_Airport_Manager.aspx" />
+    <Content Include="ADMS\ADMS_Export_Data_For_Boeing_OPT.aspx" />
+    <Content Include="ADMS\ADMS_Home.aspx" />
+    <Content Include="ADMS\ADMS_IntersectionDM.aspx" />
+    <Content Include="ADMS\ADMS_ObstacleDM.aspx" />
+    <Content Include="ADMS\ADMS_ObstacleGraph.aspx" />
+    <Content Include="ADMS\ADMS_ParameterValues.aspx" />
+    <Content Include="ADMS\ADMS_RunwayDM.aspx" />
+    <Content Include="ADMS\ADMS_TextReportPrint.aspx" />
+    <Content Include="ADMS\AirportManagerFileDownload.aspx" />
+    <Content Include="ADMS\Change_Record_Report.xml" />
+    <Content Include="ADMS\JetstarLogo.jpg" />
+    <Content Include="ADMS\Test2.xml" />
+    <Content Include="ADMS\TextFileReport.xml" />
+    <Content Include="AnalyticalRpt\AnalyticalReport.aspx" />
+    <Content Include="AnalyticalRpt\AnalyticalReport_Structure.xml" />
+    <Content Include="AnalyticalRpt\EnableDisableIPAD.aspx" />
+    <Content Include="AnalyticalRpt\MoveDataToProd.aspx" />
+    <Content Include="AnalyticalRpt\ViewLoadSheet.aspx" />
+    <Content Include="ChangePwd.aspx" />
+    <Content Include="Database\Aircraft.aspx" />
+    <Content Include="Database\AircraftConfig.aspx" />
+    <Content Include="Database\AircraftConfigAdjustments.aspx" />
+    <Content Include="Database\AircraftDetail.aspx" />
+    <Content Include="Database\Choice.aspx" />
+    <Content Include="Database\ChoiceAdd.aspx" />
+    <Content Include="Database\ChoiceList.aspx" />
+    <Content Include="Database\ChoiceListAdd.aspx" />
+    <Content Include="Database\CrewConfiguration.aspx" />
+    <Content Include="Database\CrewWeightsnArms.aspx" />
+    <Content Include="Database\FuelData.aspx" />
+    <Content Include="Database\GalleyArms.aspx" />
+    <Content Include="Database\GalleyWeights.aspx" />
+    <Content Include="Database\IpadDbVHry.aspx" />
+    <Content Include="Database\OperationalLimit.aspx" />
+    <Content Include="Database\OperationalLimitEdit.aspx" />
+    <Content Include="Database\Registration.aspx" />
+    <Content Include="Database\RegistrationDetail.aspx" />
+    <Content Include="Database\ServiceData.aspx" />
+    <Content Include="Database\ServiceDefinitionEdit.aspx" />
+    <Content Include="Database\ServiceDefinitions.aspx" />
+    <Content Include="Database\Subfleet.aspx" />
+    <Content Include="Database\SubfleetDetails.aspx" />
+    <Content Include="Database\ULDConfigurationEdit.aspx" />
+    <Content Include="Database\ULDDefinitions.aspx" />
+    <Content Include="Database\UlDPositionEdit.aspx" />
+    <Content Include="Database\Underfloor.aspx" />
+    <Content Include="Database\UnderFloorCompartment.aspx" />
+    <Content Include="Database\UnderFloorConfiguration.aspx" />
+    <Content Include="Database\UnderFloorPostionDetail.aspx" />
+    <Content Include="Database\ZoneDefinition.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="Images\add.gif" />
+    <Content Include="Images\Add.png" />
+    <Content Include="Images\arrow-asc.png" />
+    <Content Include="Images\arrow-desc.png" />
+    <Content Include="Images\blank-silver.gif" />
+    <Content Include="Images\buttonBg.jpg" />
+    <Content Include="Images\button_cance.ico" />
+    <Content Include="Images\Calendar.gif" />
+    <Content Include="Images\Calendar_scheduleHS.png" />
+    <Content Include="Images\cancel.gif" />
+    <Content Include="Images\Cancel2.jpg" />
+    <Content Include="Images\cancel3.gif" />
+    <Content Include="Images\clear.GIF" />
+    <Content Include="Images\Delay.jpg" />
+    <Content Include="Images\DelayWatch.jpg" />
+    <Content Include="Images\delete.ico" />
+    <Content Include="Images\Delete.png" />
+    <Content Include="Images\delete_icon.png" />
+    <Content Include="Images\desc.jpg" />
+    <Content Include="Images\edit.gif" />
+    <Content Include="Images\edit.ico" />
+    <Content Include="Images\edit.png" />
+    <Content Include="Images\edit16x16.gif" />
+    <Content Include="Images\erase.gif" />
+    <Content Include="Images\fids_new.gif" />
+    <Content Include="Images\filesave.ico" />
+    <Content Include="Images\gry_D.png" />
+    <Content Include="Images\hdrbg_main.jpg" />
+    <Content Include="Images\help.GIF" />
+    <Content Include="Images\hover.gif" />
+    <Content Include="Images\hover_sub.gif" />
+    <Content Include="Images\jetstar.gif" />
+    <Content Include="Images\JetStarLogo.png" />
+    <Content Include="Images\Jetstar_logo.gif" />
+    <Content Include="Images\Jetstar_logo.jpg" />
+    <Content Include="Images\JFIDS_Title.GIF" />
+    <Content Include="Images\loading.gif" />
+    <Content Include="Images\loading1.gif" />
+    <Content Include="Images\Loading2.gif" />
+    <Content Include="Images\login.jpg" />
+    <Content Include="Images\menu-background-right.jpg" />
+    <Content Include="Images\new.ico" />
+    <Content Include="Images\NewJetStarLogo.png" />
+    <Content Include="Images\Publish.jpg" />
+    <Content Include="Images\PublishArrow.jpg" />
+    <Content Include="Images\PublishDesktop.jpg" />
+    <Content Include="Images\PublishNote.jpg" />
+    <Content Include="Images\PublishPaper.jpg" />
+    <Content Include="Images\Refresh.png" />
+    <Content Include="Images\save.gif" />
+    <Content Include="Images\seperator.gif" />
+    <Content Include="Images\sub_sep.gif" />
+    <Content Include="Images\tabdark.gif" />
+    <Content Include="Images\Title.JPG" />
+    <Content Include="Images\trash.gif" />
+    <Content Include="Images\Update.JPG" />
+    <Content Include="Images\YMinus.gif" />
+    <Content Include="Images\YPlus.gif" />
+    <Content Include="JS\Absenteeism\jquery-1.4.4.js" />
+    <Content Include="JS\Absenteeism\jquery-1.7.1.min.js" />
+    <Content Include="JS\Absenteeism\jquery-ui-1.8.6.custom.css" />
+    <Content Include="JS\Absenteeism\jquery-ui.css" />
+    <Content Include="JS\Absenteeism\jquery-ui.js" />
+    <Content Include="JS\Absenteeism\jquery-ui.min.js" />
+    <Content Include="JS\Absenteeism\jquery.form.js" />
+    <Content Include="JS\Absenteeism\jquery.validate.js" />
+    <Content Include="JS\Absenteeism\jquery.validate.min.js" />
+    <Content Include="JS\print.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="References\AjaxControlToolkit.dll" />
+    <Content Include="References\CS_Resources.dll" />
+    <Content Include="References\CS_Resources.pdb" />
+    <Content Include="References\JdSoft.Apns.Notifications.dll" />
+    <Content Include="References\JdSoft.Apns.Notifications.pdb" />
+    <Content Include="References\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="References\Microsoft.Practices.EnterpriseLibrary.Data.dll" />
+    <Content Include="References\Microsoft.Practices.ObjectBuilder2.dll" />
+    <Content Include="References\Microsoft.Practices.Unity.dll" />
+    <Content Include="References\Newtonsoft.Json.Compact.dll" />
+    <Content Include="References\Newtonsoft.Json.dll" />
+    <Content Include="References\SQLite.dll" />
+    <Content Include="References\SQLite.NET.dll" />
+    <Content Include="References\SQLite3.dll" />
+    <Content Include="StyleSheet\MenuStyleSheet.css" />
+    <Content Include="StyleSheet\ReportEngine.css" />
+    <Content Include="StyleSheet\StyleSheet.css" />
+    <Content Include="StyleSheet\WNB.css" />
+    <Content Include="StyleSheet\WNB_Sheet.css" />
+    <Content Include="SubMenu.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WNB_Admin_BO\WNB_Admin_BO.vbproj">
+      <Project>{1D903D43-1FA3-4064-83C6-093576859F17}</Project>
+      <Name>WNB_Admin_BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WNB_Common\WNB_Common.vbproj">
+      <Project>{9131E3FC-EA07-467A-B0C5-20A199F96D46}</Project>
+      <Name>WNB_Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Database\App_Data\" />
+    <Folder Include="Temp\LoadSheet\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55467</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
